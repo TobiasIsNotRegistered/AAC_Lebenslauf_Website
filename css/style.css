@@ -1,7 +1,7 @@
 /* make variables for different colors */
 :root{
 	--background: 	#404040;
-	--highlight: 	#e62e00;
+	--highlight: 	#00ACC2;
 	--hover: 		#555;
 	--text: 		#cccccc;
 }
@@ -16,9 +16,17 @@ body{
 .content{
 	
 	background-color: var(--background);
-	font-size: 1rem;
+	font-size: 1.00rem;
 	color: var(--text);
 	padding: 10px 25px;
+}
+
+.content>cv_list{
+	overflow:auto;
+}
+
+.content>cv_list>dl{
+	float:left;
 }
 
 .content>h3{

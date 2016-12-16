@@ -12,7 +12,7 @@ body, html {
 	
 	 /* height of the screen */
 	min-height: 200px;
-    height: 20%;
+    height: 30vh; /* no idea what vh means but it's basically %. prevents resizing when address bar in mobile slides away. */
 	
 	/* align to center with flexbox (?) */
 	display: flex;
@@ -25,9 +25,10 @@ body, html {
 	font-family: "Segoe UI",Arial,sans-serif;
 	font-weight: bold;
 	
-		
-    /* The image used */
+	/* The image used */
     background-image: url('../images/mountain_and_clouds.jpg');
+
+   
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -35,4 +36,3 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
