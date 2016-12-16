@@ -1,0 +1,38 @@
+/*  If you want to use percent, for example 100%, 
+	to make the image fit the whole screen, you 
+	must apply height: 100% to both <html> and 
+	<body>: 
+*/
+body, html {
+	height: 100%;
+}
+
+.parallax_1 {
+	padding: 0 30px;
+	
+	 /* height of the screen */
+	min-height: 200px;
+    height: 20%;
+	
+	/* align to center with flexbox (?) */
+	display: flex;
+	justify-content: center; /* horizontal */
+	align-items: center; /* vertical */
+	
+	/* styling */
+	font-size:28px;
+	color: white;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-weight: bold;
+	
+		
+    /* The image used */
+    background-image: url('../images/mountain_and_clouds.jpg');
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

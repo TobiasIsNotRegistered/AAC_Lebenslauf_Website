@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de"> <!--- soll auch auf english funktionieren! --->
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<link type="text/css" rel="stylesheet" href="css/responsive_topnav.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link type="text/css" rel="stylesheet" href="css/parallax.css">
+	
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curriculum vitae </title>
+</head>
+
+
+<body>
+
+<div id="nav">
+<ul class="topnav" id="myTopnav">
+		<li><a href ="#sf">_short_facts</a></li>
+		<li><a href ="#cv">_curriculum_vitae</a></li>
+		<li><a href ="#kh">_know_how</a></li>
+		<li><a href ="#ref">_references</a></li>
+		<li><a href ="#sc">_showcase</a></li>
+		<li class="icon"><a href="javascript:void(0);" onclick="toggleMenue()">&#9776;</a> </li>
+</ul>
+</div>
+
+<!--- __________________________________________________ --->
+
+
+<div class="parallax_1">Welcome!</div>
+<div class="content" id="sf">
+	
+	<h3>_short_facts</h3>
+	<p>	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<!--- __________________________________________________ --->
+
+<div class="parallax_1">motivational quote</div>
+<div class="content" id="cv">
+	<h3>_curriculum_vitae</h3>
+	<div class="cv_list">
+		<dl>
+			<dt>1994</dt>
+			<dd>date of birth</dd>
+			<dt>1997</dt>
+			<dd>I made the entry to kindergarden</dd>
+			<dt>1999</dt>
+			<dd>I graduated from kindergarden<dd>
+			<dt>2014</dt>
+			<dd>I entered FHNW-Windisch!</dd>
+			<dt>now</dt>
+			<dd>started from the bottom now I'm here</dd>
+		</dl>
+	</div>	
+</div>
+
+<!--- __________________________________________________ --->
+
+<div class="parallax_1">started from the bottom now I'm here!</div>
+<div class="content" id="kh">
+	<h3>_know_how</h3>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<!--- __________________________________________________ --->
+
+<div class="parallax_1">stop scrolling!</div>
+<div class="content" id="ref">	
+	<h3>_references</h3>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<!--- __________________________________________________ --->
+
+<div class="parallax_1">these violent delights will have violent ends. Also, this text should align on center, even with multiple lines. Google it! Ever wondered what happens, if I put too much text in this bracket? Will it overlay? Possibly!</div>
+<div class="content" id="sc">
+	<h3>_showcase</h3>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<div class="parallax_1"></div>
+	
+</body>
+</html>
+
+<!--- ______________.oO°AUXILIARY°Oo.________________ --->
+
+<script>
+function toggleMenue() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 50
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+
+
