@@ -3,9 +3,7 @@
 	must apply height: 100% to both <html> and 
 	<body>: 
 */
-body, html {
-	height: 100%;
-}
+
 
 .parallax_1 {
 	padding: 0 30px;
@@ -13,20 +11,20 @@ body, html {
 	 /* height of the screen */
 	min-height: 200px;
     height: 30vh; /* no idea what vh means but it's basically %. prevents resizing when address bar in mobile slides away. */
-	
+					/* I know it now. It means 30% fôf the current viewport */
 	/* align to center with flexbox (?) */
 	display: flex;
 	justify-content: center; /* horizontal */
 	align-items: center; /* vertical */
 	
 	/* styling */
-	font-size:28px;
+	font-size:3rem;
 	color: white;
-	font-family: "Segoe UI",Arial,sans-serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-weight: bold;
 	
 	/* The image used */
-    background-image: url('../images/mountain_and_clouds.jpg');
+	background-image: url('../images/mountain_and_clouds.jpg');
 
    
 
