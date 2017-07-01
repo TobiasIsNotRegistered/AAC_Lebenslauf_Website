@@ -147,34 +147,31 @@
 
 <!--- ______________.oO°HamburgerMenue°Oo.________________ -->
 
-<script>
-function toggleMenue() {
-    var x = document.getElementById("myTopnav");
-    if (x.className == "topnav") {
-        x.className += " responsive";
-        
-    } else {
-        x.className = "topnav";
-    
-    }
-}
-</script>
+
 
 <!-- this is only a workaround for closing the menue by clicking on content -->
 <script>
 function closeMenue() {
     var x = document.getElementById("myTopnav");
     if(x.className == "topnav responsive"){
-        x.className = "topnav"; 
-        
+        x.className = "topnav";         
     }
 }
 </script>
+
 
 <script type="text/javascript">
 document.querySelector( "#nav-toggle" )
   .addEventListener( "click", function() {
     this.classList.toggle( "active" );
+    
+    var x = document.getElementById("myTopnav");
+    if (x.className == "topnav") {
+        x.className += " responsive";        
+    } else {
+        x.className = "topnav";    
+    }
+
   });
 </script>
 

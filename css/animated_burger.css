@@ -1,6 +1,6 @@
 body { background-color: black; height: 100%; }
 h3 { color: white; }
-#nav-toggle { position: absolute;  top: 25%; right: 5%;}
+#nav-toggle { position: absolute;  top: 12px; right: 5%;}
 
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -21,13 +21,13 @@ h3 { color: white; }
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
-  transition: all 500ms ease-in-out;
+  transition: all 2500ms ease-in-out;
 }
 #nav-toggle.active span {
   background-color: transparent;
 }
 #nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
+  top: 25vh;
 }
 #nav-toggle.active span:before {
   transform: rotate(45deg);
