@@ -10,6 +10,7 @@
 <link type="text/css" rel="stylesheet" href="css/responsive_topnav.css">
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet" href="css/parallax.css">
+<link type="text/css" rel="stylesheet" href="css/animated_burger.css">
 	
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +21,8 @@
 
 <body>
 
+
+
 <div id="nav">
 <ul class="topnav" id="myTopnav">
 		<li><a href ="#sf" 	onclick="closeMenue()">_short_facts			</a></li>
@@ -27,20 +30,26 @@
 		<li><a href ="#kh" 	onclick="closeMenue()">_know_how			</a></li>
 		<li><a href ="#ref"	onclick="closeMenue()">_references			</a></li>
 		<li><a href ="#sc"	onclick="closeMenue()">_showcase			</a></li>
-		<li class="icon"><a href="javascript:void(0);" onclick="toggleMenue()">&#9776;</a> </li>
+		<li><a href ="#contact"	onclick="closeMenue()">_contact			</a></li>
+		<li class="icon"><a id="nav-toggle" onclick="toggleMenue()"><span></span></a> </li>
 </ul>
 </div>
+
+
 
 <!--- __________________________________________________ -->
 
 <div class="content_container" onclick="closeMenue()">
 
-<div class="parallax_1" id="sf">Welcome!</div>
+<div class="parallax_text" id="sf">Welcome!</div>
 
-<div class="content">
+<div class="content" id="short_facts">
 	<h3>_short_facts</h3>
 	<img src="images/1.jpg"></img>
-	<p>	
+
+	
+
+	<p>			
 	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
 	sed diam nonumy eirmod tempor invidunt ut labore et dolore 
 	magna aliquyam erat, sed diam voluptua. At vero eos et 
@@ -56,7 +65,7 @@
 
 <!--- __________________________________________________ -->
 
-<div class="parallax_1" id="cv">motivational quote</div>
+<div class="parallax_notext" id="cv"></div>
 <div class="content">
 	<h3>_curriculum_vitae</h3>
 	
@@ -88,11 +97,12 @@
 	</div>	
 </div>
 
+
+
+
 <!--- __________________________________________________ -->
 
-<div class="parallax_1"  id="kh">
-Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein gebursag 2tausend jahre vong alter her ist?
-</div>
+<div class="parallax_notext"  id="kh"> </div>
 <div class="content">
 	<h3>_know_how</h3>
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -100,9 +110,7 @@ Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein ge
 
 <!--- __________________________________________________ -->
 
-<div class="parallax_1" id="ref">
-1 Träne besteht zu 1% aus Waser und zum 99% aus Gefühle
-</div>
+<div class="parallax_notext" id="ref"> </div>
 <div class="content" >	
 	<h3>_references</h3>
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
@@ -110,9 +118,7 @@ Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein ge
 
 <!--- _______________________________________________ -->
 
-<div class="parallax_1" id="sc">
-started from the bottom now I'm here!
-</div>
+<div class="parallax_notext" id="sc"> </div>
 
 <div class="content" >
 	<h3>_showcase</h3>
@@ -123,9 +129,7 @@ started from the bottom now I'm here!
 
 <!--- ___________________FOOTER______________________ -->
 	
-<div class="parallax_1">
-these violent delights will have violent ends. 
-</div>	
+<div class="parallax_notext" id="contact"> </div>	
 <div class="footer">
 	<h3>Contact</h3>
 	<p>Tobias Sigel</br>Bleicherweg 2</br>5312 Döttingen</br>
@@ -133,6 +137,8 @@ these violent delights will have violent ends.
 	@ Tobias Sigel </br></a>
 	
 	made with <i class="fa fa-heart-o"></i> & ctrl+c/v
+
+	</p>
 
 </div>
 	
@@ -146,8 +152,10 @@ function toggleMenue() {
     var x = document.getElementById("myTopnav");
     if (x.className == "topnav") {
         x.className += " responsive";
+        
     } else {
         x.className = "topnav";
+    
     }
 }
 </script>
@@ -157,10 +165,19 @@ function toggleMenue() {
 function closeMenue() {
     var x = document.getElementById("myTopnav");
     if(x.className == "topnav responsive"){
-        x.className = "topnav";    
+        x.className = "topnav"; 
+        
     }
 }
 </script>
+
+<script type="text/javascript">
+document.querySelector( "#nav-toggle" )
+  .addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+  });
+</script>
+
 
 
 <!--- ______________.oO°Auxiliary°Oo.________________ -->
@@ -193,6 +210,29 @@ $(document).ready(function(){
   });
 });
 </script>
+
+<!-- 	doesn't work right now
+		idea was to update the title when scrolling responsive. users should know in which section they are-->
+<!--		
+<script>
+$(window).on("scroll resize", function(){
+    var pos=$('#sf').offset();
+    $('.content').each(function(){
+        if(pos.top >= $(this).offset().top && pos.top <= $(this).next().offset().top)
+        {
+            $('#title_test').html($(this).find('.h3').text()); //or any other way you want to get the date
+            return; //break the loop
+        }
+    });
+});
+
+$(document).ready(function(){
+  $(window).trigger('scroll'); // init the value
+});
+</script>
+-->
+
+
 
 
 
