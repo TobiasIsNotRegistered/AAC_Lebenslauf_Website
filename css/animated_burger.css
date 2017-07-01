@@ -1,6 +1,6 @@
 body { background-color: black; height: 100%; }
 h3 { color: white; }
-#nav-toggle { position: absolute; left: 90%; top: 25%; }
+#nav-toggle { position: absolute;  top: 25%; right: 5%;}
 
 #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {

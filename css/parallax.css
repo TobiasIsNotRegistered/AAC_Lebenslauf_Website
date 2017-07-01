@@ -47,7 +47,7 @@
 	
 	 /* height of the screen */
 	
-    height: 5vh; /* no idea what vh means but it's basically %. prevents resizing when address bar in mobile slides away. */
+    height: 10vh; /* no idea what vh means but it's basically %. prevents resizing when address bar in mobile slides away. */
 					/* I know it now. It means 30% fôf the current viewport */
 	/* align to center with flexbox (?) */
 	display: flex;
