@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!--- soll auch auf english funktionieren! --->
+<html lang="en"> <!--- soll auch auf english funktionieren! -->
 
 <head>
 
@@ -16,22 +16,24 @@
 <title>Curriculum vitae </title>
 </head>
 
-<!--- ____________________NAVIGATION____________________ --->
+<!--- ____________________NAVIGATION____________________ -->
 
 <body>
 
 <div id="nav">
 <ul class="topnav" id="myTopnav">
-		<li><a href ="#sf">_short_facts</a></li>
-		<li><a href ="#cv">_curriculum_vitae</a></li>
-		<li><a href ="#kh">_know_how</a></li>
-		<li><a href ="#ref">_references</a></li>
-		<li><a href ="#sc">_showcase</a></li>
+		<li><a href ="#sf" 	onclick="closeMenue()">_short_facts			</a></li>
+		<li><a href ="#cv" 	onclick="closeMenue()">_curriculum_vitae	</a></li>
+		<li><a href ="#kh" 	onclick="closeMenue()">_know_how			</a></li>
+		<li><a href ="#ref"	onclick="closeMenue()">_references			</a></li>
+		<li><a href ="#sc"	onclick="closeMenue()">_showcase			</a></li>
 		<li class="icon"><a href="javascript:void(0);" onclick="toggleMenue()">&#9776;</a> </li>
 </ul>
 </div>
 
-<!--- __________________________________________________ --->
+<!--- __________________________________________________ -->
+
+<div class="content_container" onclick="closeMenue()">
 
 <div class="parallax_1" id="sf">Welcome!</div>
 
@@ -52,7 +54,7 @@
 	ipsum dolor sit amet.</p>
 </div>
 
-<!--- __________________________________________________ --->
+<!--- __________________________________________________ -->
 
 <div class="parallax_1" id="cv">motivational quote</div>
 <div class="content">
@@ -86,7 +88,7 @@
 	</div>	
 </div>
 
-<!--- __________________________________________________ --->
+<!--- __________________________________________________ -->
 
 <div class="parallax_1"  id="kh">
 Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein gebursag 2tausend jahre vong alter her ist?
@@ -96,7 +98,7 @@ Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein ge
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 </div>
 
-<!--- __________________________________________________ --->
+<!--- __________________________________________________ -->
 
 <div class="parallax_1" id="ref">
 1 Träne besteht zu 1% aus Waser und zum 99% aus Gefühle
@@ -106,7 +108,7 @@ Warung gibt es 8000 jare alte domukente wenn jesus christof vong nazaret sein ge
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 </div>
 
-<!--- _______________________________________________ --->
+<!--- _______________________________________________ -->
 
 <div class="parallax_1" id="sc">
 started from the bottom now I'm here!
@@ -117,9 +119,9 @@ started from the bottom now I'm here!
 	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 </div>
 
+</div class="content_container">
 
-
-<!--- ___________________FOOTER______________________ --->
+<!--- ___________________FOOTER______________________ -->
 	
 <div class="parallax_1">
 these violent delights will have violent ends. 
@@ -137,12 +139,12 @@ these violent delights will have violent ends.
 </body>
 </html>
 
-<!--- ______________.oO°AUXILIARY°Oo.________________ --->
+<!--- ______________.oO°HamburgerMenue°Oo.________________ -->
 
 <script>
 function toggleMenue() {
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    if (x.className == "topnav") {
         x.className += " responsive";
     } else {
         x.className = "topnav";
@@ -150,6 +152,21 @@ function toggleMenue() {
 }
 </script>
 
+<!-- this is only a workaround for closing the menue by clicking on content -->
+<script>
+function closeMenue() {
+    var x = document.getElementById("myTopnav");
+    if(x.className == "topnav responsive"){
+        x.className = "topnav";    
+    }
+}
+</script>
+
+
+<!--- ______________.oO°Auxiliary°Oo.________________ -->
+
+
+<!-- this script adds smooth scrolling -->
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -177,11 +194,5 @@ $(document).ready(function(){
 });
 </script>
 
-<!---
-<script>
-var esheep = new DesktopPet();
-esheep.start_esheep();
-</script>
---->
 
 
