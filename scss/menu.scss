@@ -1,5 +1,10 @@
 $primary-color: #38C5B9;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 @mixin easeOut {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
 }
