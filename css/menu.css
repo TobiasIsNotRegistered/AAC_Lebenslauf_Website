@@ -1,49 +1,162 @@
-/*
-Error: Invalid CSS after "  height 100%": expected "{", was ";"
-        on line 213 of scss/menu.scss
+* {
+  margin: 0;
+  padding: 0; }
 
-208:   font-weight: 400;
-209: }
-210: 
-211: main {
-212:   min-height: 100vh;
-213:   height 100%;
-214:   display: flex;
-215:   flex-flow: column wrap;
-216:   justify-content: center;
-217:   padding: 8vw;
-218:   padding-top: 50px;
+* {
+  box-sizing: border-box; }
 
-Backtrace:
-scss/menu.scss:213
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1207:in `expected'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1137:in `expected'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:1132:in `tok!'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:665:in `block'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:685:in `block_child'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:666:in `block'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:658:in `ruleset'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:684:in `block_child'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:677:in `block_contents'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:125:in `stylesheet'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:406:in `_to_tree'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  height 100%\": expected \"{\", was \";\"\A         on line 213 of scss/menu.scss\A \A 208:   font-weight: 400;\A 209: }\A 210: \A 211: main {\A 212:   min-height: 100vh;\A 213:   height 100%;\A 214:   display: flex;\A 215:   flex-flow: column wrap;\A 216:   justify-content: center;\A 217:   padding: 8vw;\A 218:   padding-top: 50px;"; }
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%; }
+
+.burger {
+  position: absolute;
+  z-index: 10;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  transform: rotateY(0);
+  transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+  .burger__patty {
+    width: 28px;
+    height: 2px;
+    margin: 0 0 4px 0;
+    background: white;
+    transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+    .burger__patty:last-child {
+      margin-bottom: 0; }
+  .burger--close {
+    transform: rotate(180deg); }
+    .burger--close .burger__patty:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px); }
+    .burger--close .burger__patty:nth-child(2) {
+      opacity: 0; }
+    .burger--close .burger__patty:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -4px); }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .menu--active {
+    visibility: visible; }
+  .menu__brand, .menu__list {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu__list {
+    margin: 0;
+    padding: 0;
+    background: #292929;
+    list-style-type: none;
+    transform: translate3d(0, -100%, 0);
+    transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+    .menu__list--active {
+      transform: translate3d(0, 0, 0); }
+  .menu__brand {
+    background: #333;
+    transition: all 1s cubic-bezier(0.23, 1, 1, 1);
+    transform: translate3d(0, 100%, 0); }
+    .menu__brand--active {
+      transform: translate3d(0, 0, 0); }
+  .menu__item {
+    transform: translate3d(-500px, 0, 0);
+    transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+    .menu__item--active {
+      transform: translate3d(0, 0, 0); }
+  .menu__link {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    padding: 15px 0;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    color: white;
+    transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+    .menu__link:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: white;
+      transform: translateX(-50%);
+      transition: all 1s cubic-bezier(0.23, 1, 1, 1); }
+    .menu__link:hover:before {
+      width: 100%; }
+  .menu .menu__item:nth-child(1) {
+    transition-delay: 0.2s; }
+  .menu .menu__item:nth-child(2) {
+    transition-delay: 0.4s; }
+  .menu .menu__item:nth-child(3) {
+    transition-delay: 0.6s; }
+  .menu .menu__item:nth-child(4) {
+    transition-delay: 0.8s; }
+  .menu .menu__item:nth-child(5) {
+    transition-delay: 1s; }
+  .menu .menu__item:nth-child(6) {
+    transition-delay: 1.2s; }
+
+@media screen and (max-width: 768px) {
+  ul.menu__list,
+  div.menu__brand {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu__list--active,
+    div.menu__brand--active {
+      transform: translate3d(0, 0, 0); }
+
+  .menu__list {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0); }
+
+  .menu__link {
+    font-size: 24px; }
+
+  .menu__brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu__brand .logo {
+      width: 90px;
+      height: 90px; } }
+.logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("../images/1.jpg");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  padding: 100px; }
+
+h1, h2, h3, p {
+  margin: 0;
+  font-weight: 400; }
+
+main {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 8vw;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 70px; }
+  main h1 > a {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 300; }
+
+/*# sourceMappingURL=menu.css.map */
