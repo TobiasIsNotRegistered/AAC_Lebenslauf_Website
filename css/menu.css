@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background: #38C5B9;
+  background: #333;
   font-family: 'Open Sans';
   color: white;
   line-height: 1.5;
@@ -62,14 +62,14 @@ body {
   .menu__list {
     margin: 0;
     padding: 0;
-    background: #2d9e94;
+    background: #292929;
     list-style-type: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
     .menu__list--active {
       transform: translate3d(0, 0, 0); }
   .menu__brand {
-    background: #38C5B9;
+    background: #333;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     transform: translate3d(0, 100%, 0); }
     .menu__brand--active {
@@ -152,7 +152,7 @@ h1, h2, h3, p {
   font-weight: 400; }
 
 main {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -162,10 +162,5 @@ main {
     text-decoration: none;
     font-size: 48px;
     font-weight: 300; }
-
-.support {
-  position: fixed;
-  bottom: 24px;
-  color: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=menu.css.map */

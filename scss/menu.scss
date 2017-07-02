@@ -1,4 +1,4 @@
-$primary-color: #38C5B9;
+$primary-color: #333;
 
 * {
   margin: 0;
@@ -216,7 +216,7 @@ h1, h2, h3, p {
 }
 
 main {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -230,8 +230,3 @@ main {
   }
 }
 
-.support {
-  position: fixed;
-  bottom: 24px;
-  color: rgba(black, 0.6);
-}
