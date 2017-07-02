@@ -9,11 +9,17 @@
 	--skyhigh:		rgb(25,95,105);
 }
 
-
 body{
 	margin: 0;
 	padding: 0;
 	font-family: "Segoe UI",Arial,sans-serif;
+	 min-height: 100vh;
+  	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/clouds.jpg"); 
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	color: white;
+  	line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
 }
 
 * {
@@ -22,16 +28,18 @@ body{
 }
 
 .footer {
-	padding: 8vw;
+	padding-bottom: : 8vw;
+	padding-left: 8vw;
 	position: fixed;
 	color: white;
-	
+	margin: -150px;
 	width: 100vw;
-	bottom: 5px;
+	bottom: 10px;
 }
 
 .footer a{
 	color: white;
+	text-decoration: none;
 }
 
 .contact {  
@@ -40,5 +48,23 @@ body{
 
 .sources {
   bottom: 20px;
+}
+
+/* ****************** INDE.HTML ************************* */
+
+main h3 {
+	font-style: italic;
+}
+
+
+/* ******************* CURRICULUM VITAE ******************* */
+
+.cv ul li p {
+	padding-top: 50px;
+
+}
+
+.cv ul {
+	 list-style-type: none;
 }
 

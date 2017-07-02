@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+<body>
+
 <header class="header">
 
   <div class="burger">
@@ -32,30 +35,30 @@
 
 </header>
 
-<!-- *************************************************************** -->
+<!-- ***************************** HTML: MAIN********************************** -->
 
 <main>
 
 
-  <h1>Welcome, stranger!</h1>
-  <h2>This website is hosted on my raspberryPi. Patience is key.</h2>
-
-  <div class="content">
-
-
- </div>
-
+  <h1>Welcome, stranger!</h1></br>
+  <h3>This website is hosted on my RaspberryPi. It may or may not be reliable.</h3></br>
+  <p> It's <a id="time"></a> right now.
 
 </main>
 
-<!-- *************************************************************** -->
+
+<!-- **************************** HTML: FOOTER*********************************** -->
 
 <div class="footer">
   <p class="contact"><a href="mailto:tobias.sigel@students.fhnw.ch">@Tobias Sigel</a>, 5312 Doettingen, Switzerland</p>
   <p class="sources">Sources: <a href="https://codepen.io/ettrics/pen/JoaaxW">Ettrics</a></p>
 </div>
 
-<!-- *************************************************************** -->
+
+
+</body>
+
+<!-- *************************** JS: MENU************************************ -->
 
 <script type="text/javascript">
 (function() {
@@ -112,5 +115,27 @@
 }());
 </script>
 
+<!-- *************************** JS: CURRENT TIME************************************ -->
 
+<script>
+(function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            startTime()
+        }, 1000);
+    }
+    startTime();
+})();
+</script>
+
+<!-- *************************** JS: COUNT TIME************************************ -->
 
