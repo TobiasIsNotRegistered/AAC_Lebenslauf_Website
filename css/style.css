@@ -13,6 +13,11 @@ body{
 	font-family: "Segoe UI",Arial,sans-serif;
 }
 
+* {
+  margin: 0;
+  padding: 0; 
+}
+
 /***********CONTENT  ************/
 .content{
 	
@@ -41,6 +46,8 @@ body{
 	width: 200px;
 	text-align: middle;
 }
+
+#
 
 /**********FOOTER***************/
 .footer{

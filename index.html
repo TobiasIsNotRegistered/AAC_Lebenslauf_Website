@@ -150,14 +150,18 @@
 
 
 <!-- this is only a workaround for closing the menue by clicking on content -->
+
 <script>
-function closeMenue() {
-    var x = document.getElementById("myTopnav");
-    if(x.className == "topnav responsive"){
-        x.className = "topnav";         
-    }
+function closeMenue(){
+	var x = document.getElementById("myTopnav");
+    if (x.className == "topnav responsive") {
+        x.className += " fadeout";        
+    } 
 }
+
+
 </script>
+
 
 
 <script type="text/javascript">
@@ -169,7 +173,7 @@ document.querySelector( "#nav-toggle" )
     if (x.className == "topnav") {
         x.className += " responsive";        
     } else {
-        x.className = "topnav";    
+        x.className += " fadeout";    
     }
 
   });
@@ -228,8 +232,16 @@ $(document).ready(function(){
 });
 </script>
 -->
-
-
-
+<script>
+$(document).ready( function() {
+    $("#dvid").hide(); //hide your div initially
+    var topOfOthDiv = $("#othdiv").offset().top;
+    $(window).scroll(function() {
+        if($(window).scrollTop() > topOfOthDiv) { //scrolled past the other div?
+            $("#dvid").show(); //reached the desired point -- show div
+        }
+    });
+});
+</script>
 
 
