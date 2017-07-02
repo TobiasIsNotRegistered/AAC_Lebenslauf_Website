@@ -20,7 +20,11 @@
 
   <nav class="menu">
     <div class="menu__brand">
-      <a href="index.html"><div class="logo"></div></a>
+      <a href="index.html"><div class="logo"></div></a></br>
+      Tobias Sigel </br>
+      Aargau, Switzerland </br>
+      076 437 85 15 </br>
+      <a href="mailto:tobias.sigel@students.fhnw.ch">tobias.sigel@students.fhnw.ch</a></br>
     </div>
     <ul class="menu__list">
       <li class="menu__item"><a href="curr.html" class="menu__link"><i class="fa fa-info-circle"></i> a b o u t</a></li>
@@ -40,9 +44,11 @@
 <main>
 
 
-  <h1>Welcome, stranger!</h1></br>
-  <h3>This website is hosted on my RaspberryPi. It may or may not be reliable.</h3></br>
-  <p> It's <a id="time"></a> right now.
+  <h1>Welcome, stranger.</h1>  
+  <p> It's <a id="time"></a>, in case you wondered.</p>
+  <div class="emptydiv"></div>
+  <h2>Please click anywhere on the screen.</h2>
+  
 
 </main>
 
@@ -55,7 +61,6 @@
 </div>
 
 
-
 </body>
 
 <!-- *************************** JS: MENU************************************ -->
@@ -64,6 +69,7 @@
 (function() {
   
   var Menu = (function() {
+    var canvas = document.querySelector('main');
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.menu');
     var menuList = document.querySelector('.menu__list');
@@ -98,6 +104,7 @@
     
     var bindActions = function() {
       burger.addEventListener('click', toggleMenu, false);
+      canvas.addEventListener('click', toggleMenu, false);     
     };
     
     var init = function() {

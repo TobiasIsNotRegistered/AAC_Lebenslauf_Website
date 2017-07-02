@@ -1,8 +1,6 @@
 * {
   margin: 0;
-  padding: 0; }
-
-* {
+  padding: 0;
   box-sizing: border-box; }
 
 .header {
@@ -41,7 +39,8 @@
   width: 100%;
   visibility: hidden; }
   .menu--active {
-    visibility: visible; }
+    visibility: visible;
+    text-align: center; }
   .menu__brand, .menu__list {
     display: flex;
     flex-flow: column wrap;

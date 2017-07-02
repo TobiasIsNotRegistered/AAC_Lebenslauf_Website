@@ -17,6 +17,7 @@ body{
   	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/clouds.jpg"); 
   	background-repeat: no-repeat;
   	background-attachment: fixed;
+  	background-size: cover;
   	color: white;
   	line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -25,6 +26,7 @@ body{
 * {
   margin: 0;
   padding: 0; 
+  color: white;
 }
 
 .footer {
@@ -50,10 +52,14 @@ body{
   bottom: 20px;
 }
 
-/* ****************** INDE.HTML ************************* */
+/* ****************** INDEX.HTML ************************* */
 
 main h3 {
 	font-style: italic;
+}
+
+.emptydiv {
+	min-height: 10vh;
 }
 
 

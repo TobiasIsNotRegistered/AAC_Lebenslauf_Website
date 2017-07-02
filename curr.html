@@ -6,10 +6,12 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
 <header class="header">
- <div class="burger">
+
+  <div class="burger">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
@@ -29,7 +31,12 @@
     </ul>
   </nav>
 
+  
+
 </header>
+
+<!-- ***************************** HTML: MAIN********************************** -->
+
 
 <main>
   <h1>Curriculum vitae</h1>
@@ -52,22 +59,23 @@
 
 </main>
 
-<!-- *************************************************************** -->
+<!-- **************************** HTML: FOOTER*********************************** -->
 
 <div class="footer">
   <p class="contact"><a href="mailto:tobias.sigel@students.fhnw.ch">@Tobias Sigel</a>, 5312 Doettingen, Switzerland</p>
   <p class="sources">Sources: <a href="https://codepen.io/ettrics/pen/JoaaxW">Ettrics</a></p>
 </div>
 
+
 </body>
 
-
-<!-- *************************************************************** -->
+<!-- *************************** JS: MENU************************************ -->
 
 <script type="text/javascript">
 (function() {
   
   var Menu = (function() {
+    var canvas = document.querySelector('main');
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.menu');
     var menuList = document.querySelector('.menu__list');
@@ -102,6 +110,7 @@
     
     var bindActions = function() {
       burger.addEventListener('click', toggleMenu, false);
+      canvas.addEventListener('click', toggleMenu, false);     
     };
     
     var init = function() {
