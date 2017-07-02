@@ -47,8 +47,9 @@ ul.topnav li.icon {display: none;}
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
 @media screen and (max-width:700px) {
-  ul.fade_container {position: fixed; 
-   / * fade-in effect */
+  ul.topnav.responsive {position: fixed; ; 
+  
+ /* fade-in effect */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -moz-animation: fadein 2s; /* Firefox */
     -ms-animation: fadein 2s; /* Internet Explorer */
@@ -72,10 +73,6 @@ ul.topnav li.icon {display: none;}
     animation: fadeout 2s;
   }
 
-  .fade_container{
-/
-  }
-
   ul.topnav.responsive li.icon {
    position: absolute; right: 5%; top: 0px; 
   }
@@ -93,7 +90,11 @@ ul.topnav li.icon {display: none;}
   
   }
 
-  
+  ul.topnav.responsive.icon{
+   
+    visibility: visible !important;
+    opacity: 1.0 !important;
+  }
 
   ul.topnav.responsive li a:hover {
     color: var(--highlight);
