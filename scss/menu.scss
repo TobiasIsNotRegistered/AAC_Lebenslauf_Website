@@ -48,6 +48,7 @@ $primary-color: #333;
   // transform burger into 'x'
   &--close {
     transform: rotate(180deg);
+    transform: translate(0px, 120px);
     
     .burger__patty {
       &:nth-child(1) {
