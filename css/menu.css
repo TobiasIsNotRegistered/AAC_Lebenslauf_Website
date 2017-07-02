@@ -30,7 +30,7 @@
     .burger--close .burger__patty:nth-child(1) {
       transform: rotate(45deg) translate(4px, 4px); }
     .burger--close .burger__patty:nth-child(2) {
-      opacity: 0; }
+      transform: rotate(1125deg); }
     .burger--close .burger__patty:nth-child(3) {
       transform: rotate(-45deg) translate(5px, -4px); }
 
