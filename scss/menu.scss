@@ -126,11 +126,13 @@ $primary-color: #333;
     padding: 10px 0;
 
     //commented this out because of usability. If you want to make the list-items animated again, use something like: transform: translate3d(0, 100vh, 0);
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 100vh, 0);
+    
     @include easeOut;
     
     &--active {
       transform: translate3d(0, 0, 0);
+
 
     }
   }
@@ -168,6 +170,7 @@ $primary-color: #333;
   // add delay to each menu item
   @for $x from 1 through 6 {
     .menu__item:nth-child(#{$x}) {
+      //this was : transition-delay: $x * .25s; , but then I got rid of the fade-in animations. The list-items should appear instantly now.
       transition-delay: $x * .25s;
     }
   }

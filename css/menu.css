@@ -85,7 +85,7 @@
       transform: translate3d(0, 0, 0); }
   .menu__item {
     padding: 10px 0;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 100vh, 0);
     -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
