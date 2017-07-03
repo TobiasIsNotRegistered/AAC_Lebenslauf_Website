@@ -7,6 +7,8 @@
 
 	--skyblue: 		rgb(5, 40,50);
 	--skyhigh:		rgb(25,95,105);
+
+	-webkit-font-smoothing: antialiased;
 }
 
 
@@ -29,29 +31,18 @@ body{
   margin: 0;
   padding: 0; 
   color: white;
+  text-decoration: none;
 }
 
-.footer {
-	padding-bottom: : 8vw;
-	padding-left: 8vw;
-	position: fixed;
-	color: white;
-	margin: -150px;
-	width: 100vw;
-	bottom: 10px;
+/* ****************** MENU ************************* */
+
+
+.info {
+	
 }
 
-.footer a{
-	color: white;
+.info a{
 	text-decoration: none;
-}
-
-.contact {  
-  bottom: 40px;  
-}
-
-.sources {
-  bottom: 20px;
 }
 
 /* ****************** INDEX.HTML ************************* */
@@ -68,11 +59,24 @@ main h3 {
 /* ******************* CURRICULUM VITAE ******************* */
 
 .cv ul li p {
-	padding-top: 50px;
+	margin-top: 10vh;
 
 }
 
 .cv ul {
 	 list-style-type: none;
+}
+
+main .profile_img {
+width: 200px;
+  height: 200px;
+  background-image: url("../images/curr_profil_img.jpg");
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20%;
+  margin-top: 10vh;
+ 
+
 }
 

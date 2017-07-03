@@ -20,19 +20,20 @@
 
   <nav class="menu">
     <div class="menu__brand">
-      <a href="index.html"><div class="logo"></div></a></br>
+      <a href="#"><div class="logo" id="logo-link"></div></a></br>
       <div class=info>
-      Tobias Sigel </br>
-      Aargau, Switzerland </br>
-      076 437 85 15 </br>
-      <a href="mailto:tobias.sigel@students.fhnw.ch">mail me!</a></br>
+        ----</br>
+        Tobias Sigel </br>
+        Aargau, Switzerland </br>
+        <a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></br>
+        ----</br>
       </div>
     </div>
     <ul class="menu__list">
-      <li class="menu__item"><a href="curr.html" class="menu__link"><i class="fa fa-info-circle"></i> n f o</a></li>
-      <li class="menu__item"><a href="" class="menu__link"><i class="fa fa-product-hunt"></i> r o j e c t s</a></li>
-      <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i> a c e b o o k </a></li>
-      <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i> s o u n d c l o u d</a></li>
+      <li class="menu__item" id="cv-link">  <a href="#" class="menu__link"><i class="fa fa-info-circle"></i> curriculum vitae</a></li>
+      <li class="menu__item" id="tba-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> to be announced</a></li>
+      <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i>acebook</a></li>
+      <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i>soundcloud</a></li>
      
     </ul>
   </nav>
@@ -41,26 +42,51 @@
 
 </header>
 
-<!-- ***************************** HTML: MAIN********************************** -->
+<!-- ***************************** HTML: MAIN-CONTENT********************************** -->
 
 <main>
 
-
+<div id="landingpage-container">
   <h1>Welcome,</h1>  
   <p> it's <a id="time"></a>.</p>
   <div class="emptydiv"></div>
   <h2>Click anywhere on the screen.</h2>
-  
+  <div class="footer"></div>
+</div>
+
+
+<div id="cv-container">
+<h1>Curriculum vitae</h1>
+   <p class="contact">Tobias Sigel | Aargau, Switzerland | February 08th, 1994 | <a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></p>
+
+   <div class="profile_img"></div>
+   
+
+   <div class="cv">
+      <ul>
+        <li>
+           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+        </li>
+         <li>
+           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+        </li>
+         <li>
+           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+        </li>
+      </ul>
+   </div>
+</div>
+
+
+<div id ="tba-container">
+
+ <h1>This section is in construction. Please come again later :)</h1>  
+
+</div>
 
 </main>
 
 
-<!-- **************************** HTML: FOOTER*********************************** -->
-
-<div class="footer">
-  <p class="contact"><a href="mailto:tobias.sigel@students.fhnw.ch">@Tobias Sigel</a>, 5312 Doettingen, Switzerland</p>
-  <p class="sources">Sources: <a href="https://codepen.io/ettrics/pen/JoaaxW">Ettrics</a></p>
-</div>
 
 
 </body>
@@ -71,6 +97,7 @@
 (function() {
   
   var Menu = (function() {
+    var logo = document.querySelector('#logo-link')
     var canvas = document.querySelector('main');
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.menu');
@@ -106,11 +133,16 @@
     
     var bindActions = function() {
       burger.addEventListener('click', toggleMenu, false);
-      canvas.addEventListener('click', toggleMenu, false);     
+      canvas.addEventListener('click', toggleMenu, false); 
+      for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].addEventListener('click', toggleMenu, false); 
+        }  
+      logo.addEventListener('click', toggleMenu, false);  
     };
     
     var init = function() {
       bindActions();
+     
     };
     
     return {
@@ -120,6 +152,7 @@
   }());
   
   Menu.init();
+
   
 }());
 </script>
@@ -128,6 +161,7 @@
 
 <script>
 (function () {
+
     function checkTime(i) {
         return (i < 10) ? "0" + i : i;
     }
@@ -146,5 +180,35 @@
 })();
 </script>
 
-<!-- *************************** JS: COUNT TIME************************************ -->
+<!-- *************************** JS: HIDE DIVS************************************ -->
+<script type="text/javascript">
+  window.onload = function() { 
+
+    //only display the landingpage-container when entering the site
+    document.getElementById('cv-container').style.display = 'none';
+    document.getElementById('tba-container').style.display = 'none';
+
+    //adding ecent-listeners to the menu-buttons
+    document.getElementById('cv-link').addEventListener('click', function (){  
+      document.getElementById('landingpage-container').style.display = 'none';  
+      document.getElementById('cv-container').style.display = 'block';      
+      document.getElementById('tba-container').style.display = 'none';
+    }, false);
+  
+     document.getElementById('tba-link').addEventListener('click', function (){  
+      document.getElementById('landingpage-container').style.display = 'none';  
+      document.getElementById('cv-container').style.display = 'none';      
+      document.getElementById('tba-container').style.display = 'block';
+    }, false);
+
+     document.getElementById('logo-link').addEventListener('click', function (){    
+      document.getElementById('landingpage-container').style.display = 'block';
+      document.getElementById('cv-container').style.display = 'none';      
+      document.getElementById('tba-container').style.display = 'none';
+    }, false);
+
+
+
+  };
+</script>
 
