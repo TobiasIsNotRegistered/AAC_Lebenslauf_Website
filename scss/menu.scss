@@ -7,7 +7,10 @@ $primary-color: #333;
 }
 
 @mixin easeOut {
-  transition: all 1.0s cubic-bezier(0.23, 1, 1.0, 1)
+-webkit-transition: all 1000ms cubic-bezier(0.460, 0.530, 0.300, 0.640); 
+   -moz-transition: all 1000ms cubic-bezier(0.460, 0.530, 0.300, 0.640); 
+     -o-transition: all 1000ms cubic-bezier(0.460, 0.530, 0.300, 0.640); 
+        transition: all 1000ms cubic-bezier(0.460, 0.530, 0.300, 0.640); /* custom */
 }
 
 @mixin tablet {
@@ -47,15 +50,16 @@ $primary-color: #333;
   
   // transform burger into 'x'
   &--close {
-    transform: rotate(180deg);
-    transform: translate(0px, 30vh);
+    transform: rotate(270deg);
+    
     
     .burger__patty {
       &:nth-child(1) {
-        transform: rotate(45deg) translate(4px, 4px);
+        transform: rotate(405deg) translate(4px, 4px);
       }
       &:nth-child(2) {
-      transform: rotate(1125deg);
+      transform: rotate(45deg);
+      opacity: 0;
         
       }
       &:nth-child(3) {
@@ -70,6 +74,7 @@ $primary-color: #333;
   top: 0;
   width: 100%;
   visibility: hidden;
+  text-align: center;
   
   &--active {
     visibility: visible;
@@ -95,7 +100,7 @@ $primary-color: #333;
     padding: 0;
     background: mix(black, $primary-color, 20);
     list-style-type: none;
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(100%, 0, 0);
     @include easeOut;
     
     //this for right-handside list
@@ -109,21 +114,24 @@ $primary-color: #333;
     background: $primary-color;
 
     @include easeOut;
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(-100%, 0, 0);
     
     //this for left-handside list
     &--active {
       transform: translate3d(0, 0, 0);
-
     }
   }
   
   &__item {
-    transform: translate3d(-500px, 0, 0);
+    padding: 10px 0;
+
+    //commented this out because of usability. If you want to make the list-items animated again, use something like: transform: translate3d(0, 100vh, 0);
+    transform: translate3d(0, 0, 0);
     @include easeOut;
     
     &--active {
       transform: translate3d(0, 0, 0);
+
     }
   }
   
@@ -131,7 +139,7 @@ $primary-color: #333;
     display: inline-block;
     position: relative;
     font-size: 30px;
-    padding: 15px 0;
+    padding: 5px 0;
     font-weight: 300;
     color: white;
     text-decoration: none;
@@ -143,7 +151,7 @@ $primary-color: #333;
       position: absolute;
       bottom: 0;
       left: 50%;
-      width: 10px;
+      width: 0px;
       height: 2px;
       background: white;
       transform: translateX(-50%);
@@ -160,13 +168,20 @@ $primary-color: #333;
   // add delay to each menu item
   @for $x from 1 through 6 {
     .menu__item:nth-child(#{$x}) {
-      transition-delay: $x * .2s;
+      transition-delay: $x * .25s;
     }
   }
 }
 
 // responsive tablet view
 @include tablet {
+
+.burger{
+  &--close {
+  transform: translate(0px, 30vh);
+  }
+}
+
  ul.menu__list,
  div.menu__brand {
   float: none;
@@ -181,7 +196,7 @@ $primary-color: #333;
 
  .menu__list {
    height: 75vh;
-   transform: translate3d(-100%, 0, 0);
+   transform: translate3d(0, 100%, 0);
  }
 
  .menu__link {
@@ -190,7 +205,7 @@ $primary-color: #333;
 
  .menu__brand {
    height: 25vh;
-   transform: translate3d(100%, 0, 0);
+   transform: translate3d(0, -100%, 0);
   
 
    .logo {
@@ -210,9 +225,8 @@ $primary-color: #333;
   background-position: center;
   border-radius: 50%;
   padding: 10vh;
-  margin: 5vh;
-
-}
+  margin: auto;
+  }
 
 h1, h2, h3, p {
   margin: 0;

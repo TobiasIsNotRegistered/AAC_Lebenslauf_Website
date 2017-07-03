@@ -59,6 +59,9 @@ main h2 {
 	margin-right: 70px;
 }
 
+.footer .menu__link {
+	font-size: 15px;
+}
 
 /* ******************* CURRICULUM VITAE ******************* */
 
@@ -107,6 +110,34 @@ width: 200px;
   margin-top: 10vh;
   margin-bottom: 5vh;
 
+}
+
+/* ****************** SHAKEABLE CONTENT ***************** */
+
+.shake {
+  animation: shake 3.0s cubic-bezier(0.23, 1, 1.0, 1) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  float: left;
+  animation-iteration-count: infinite;
+  display: inline;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: rotate(1deg);
+  }
+  20%, 80% {
+    transform: rotate(-1deg);
+  }
+  30%, 70%{
+  	transform: rotate(1deg);
+  }
+  40%, 60% {
+    transform: rotate(-1deg);
+  }
+  
 }
 
 
