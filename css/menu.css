@@ -15,20 +15,20 @@
   top: 25px;
   cursor: pointer;
   transform: rotateY(0);
-  -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-  -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-  -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-  transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+  -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+  -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+  -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+  transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
   /* custom */ }
   .burger__patty {
     width: 28px;
     height: 2px;
     margin: 0 0 4px 0;
     background: white;
-    -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */ }
     .burger__patty:last-child {
       margin-bottom: 0; }
@@ -63,36 +63,33 @@
   .menu__list {
     margin: 0;
     padding: 0;
-    background: #292929;
+    background: #4d566d;
     list-style-type: none;
     transform: translate3d(100%, 0, 0);
-    -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */ }
     .menu__list--active {
       transform: translate3d(0, 0, 0); }
   .menu__brand {
-    background: #333;
-    -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    background: #606c88;
+    -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */
     transform: translate3d(-100%, 0, 0); }
     .menu__brand--active {
       transform: translate3d(0, 0, 0); }
   .menu__item {
     padding: 10px 0;
-    transform: translate3d(0, 100vh, 0);
-    -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */ }
-    .menu__item--active {
-      transform: translate3d(0, 0, 0); }
   .menu__link {
     display: inline-block;
     position: relative;
@@ -102,10 +99,10 @@
     color: white;
     text-decoration: none;
     color: white;
-    -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-    transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+    transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */ }
     .menu__link:before {
       content: "";
@@ -116,25 +113,25 @@
       height: 2px;
       background: white;
       transform: translateX(-50%);
-      -webkit-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-      -moz-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-      -o-transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
-      transition: all 1000ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+      -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+      -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+      -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
+      transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
       /* custom */ }
     .menu__link:hover:before {
       width: 100%; }
   .menu .menu__item:nth-child(1) {
-    transition-delay: 0.25s; }
+    transition-delay: 0; }
   .menu .menu__item:nth-child(2) {
-    transition-delay: 0.5s; }
+    transition-delay: 0; }
   .menu .menu__item:nth-child(3) {
-    transition-delay: 0.75s; }
+    transition-delay: 0; }
   .menu .menu__item:nth-child(4) {
-    transition-delay: 1s; }
+    transition-delay: 0; }
   .menu .menu__item:nth-child(5) {
-    transition-delay: 1.25s; }
+    transition-delay: 0; }
   .menu .menu__item:nth-child(6) {
-    transition-delay: 1.5s; }
+    transition-delay: 0; }
 
 @media screen and (max-width: 768px) {
   .burger--close {

@@ -37,9 +37,7 @@
       <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i> soundcloud</a></li>
      
     </ul>
-  </nav>
-
-  
+  </nav>  
 
 </header>
 
@@ -49,16 +47,18 @@
 
 
 <div class="container" id="landingpage-container">
+
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
-  <p style="font-size: calc(25px + 0.5vh); text-align: center;"> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
+  <p> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
+  <p> [online since: ] </p>
   <div class="emptydiv"></div>
-  <h3 style ="text-align: center; font-style: italic">This site is currently hosted on my raspberryPi and under construction.</h3>
-
-
-  <div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+  <p>This site is currently hosted on my raspberryPi and under construction.</p>
+  <div class="emptydiv"></div>
+  <div class="emptydiv"></div>
+  
+  <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
     <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-    </div>
+    
 </div>
 
 
@@ -66,7 +66,7 @@
 <div class ="container" id="cv-container">
 <h2>Curriculum vitae</h2>
    <p class="contact">
-    <a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a> |  <a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></p>
+    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div></p>
 
    <div class="profile_img"></div>
    
@@ -74,28 +74,44 @@
    <div class="cv-list">
       <ul>
         <li>
-             <span class="date">since 2015<span class="duration">until now</br><span class="text">Bachelor of Science in IT Course iCompetence FHNW Windisch, AG</span></span></span>        
+             <span class="date">since 2015</span>  
+             <span class="duration">until now</span>   
+             <span class="text">Bachelor of Science in IT Course iCompetence FHNW Windisch, AG</span>   
         </li>
         <li>
-             <span class="date">2015 - 2015<span class="duration">4 months</br><span class="text">Community service at KSP Baden Gardening & facility management Baden, AG</span></span></span>           
+             <span class="date">2015 - 2015</span>  
+             <span class="duration">4 months</span>     
+             <span class="text">Community service at KSP Baden Gardening & facility management Baden, AG</span>    
         </li>
          <li>
-             <span class="date">2014 - 2015<span class="duration">8 months</br><span class="text">Civil engineer at Ingenieurbüro Senn AG Support of civil engineering projects Nussbaumen, AG</span> </span></span>         
+             <span class="date">2014 - 2015</span>
+             <span class="duration">8 months</span>
+             <span class="text">Civil engineer at Ingenieurbüro Senn AG Support of civil engineering projects Nussbaumen, AG</span>          
         </li>
         <li>
-             <span class="date">2013 - 2014<span class="duration">8 months</br><span class="text">Community service at Stage-on-air Supervising employees and coordinating workloads Aarau, AG</span> </span></span>         
+             <span class="date">2013 - 2014 </span>
+             <span class="duration">8 months</span> 
+             <span class="text">Community service at Stage-on-air Supervising employees and coordinating workloads Aarau, AG</span>        
         </li>
         <li>
-             <span class="date">2010 - 2013<span class="duration"></br><span class="text">Technical vocational baccalaurate diploma Berufsschule Lenzburg  Lenzburg, AG</span> </span></span>       
+             <span class="date">2010 - 2013 </span>
+             <span class="duration"></span> 
+             <span class="text">Technical vocational baccalaurate diploma Berufsschule Lenzburg  Lenzburg, AG</span>      
         </li>
         <li>
-             <span class="date">2009 - 2013<span class="duration"></br><span class="text">Apprenticeship civil engineering Porta AG Brugg, AG / Interlaken, BE</span> </span></span>       
+             <span class="date">2009 - 2013 </span>
+             <span class="duration"></span>
+             <span class="text">Apprenticeship civil engineering Porta AG Brugg, AG / Interlaken, BE</span>       
         </li>
         <li>
-             <span class="date">2006 - 2009<span class="duration"></br><span class="text">Bezirksschule Klingnau Klingnau, AG</span> </span></span>       
+             <span class="date">2006 - 2009</span>
+             <span class="duration"></span>
+             <span class="text">Bezirksschule Klingnau Klingnau, AG</span>        
         </li>
         <li>
-             <span class="date">2006 - 2009<span class="duration"></br><span class="text">elementary school Zürich ZH</span> </span></span>       
+             <span class="date">2006 - 2009</span> 
+             <span class="duration"></span> 
+             <span class="text">elementary school Zürich ZH</span>      
         </li>
       </ul>
    </div>
@@ -209,7 +225,8 @@
   window.onload = function() { 
 
     //only display the landingpage-container when entering the site
-    document.getElementById('cv-container').style.display = 'none';
+    document.getElementById('landingpage-container').style.display = 'none';  
+    document.getElementById('cv-container').style.display = 'block';
     document.getElementById('tba-container').style.display = 'none';
 
     //adding ecent-listeners to the menu-buttons

@@ -23,14 +23,52 @@
 
 body{
 	
-	 min-height: 100vh;
-  	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/clouds.jpg"); 
+	min-height: 110vh;
+
+  	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0, 0.6) ), url("../images/clouds.jpg"); 
+  	
   	background-repeat: no-repeat;
   	background-attachment: fixed;
   	background-size: cover;
   	background-height: 100vh;
   	line-height: 1.5;
     
+}
+
+/*
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
+background: #606c88; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #606c88 0%, #3f4c6b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #606c88 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+*/*/
+
+
+/* **************** ALL CONTENT_CONTAINERS ************** */
+
+.container {
+	overflow: hidden;
+}
+
+.container p {
+	font-size: calc(15px + .5vh);
+}
+
+.container h1 {
+	font-size: calc(25px + 3.5vh);
+	margin: 3vh;
+}
+
+.container h2 {
+	font-size: calc(15px + 2.5vh);
+}
+
+.container a {
+	font-size: calc(15px + .5vh);
 }
 
 
@@ -45,87 +83,54 @@ body{
 	font-size: calc(15px + .5vh);
 }
 
-.container h2{
-	font-size: 6vh;
-}
 
 /* ****************** LANDING PAGE ************************* */
 
-main h1 {	
-	font-size: 10vh;
+#landingpage-container{
 	text-align: center;
-}
-
-main h2 {	
-	font-size: 6vh;
+	
 }
 
 .emptydiv {
 	min-height: 10vh;
 }
 
-.footer {
-	bottom: 0px;
-	position:fixed;
-	height: 100px;
-	margin-right: 70px;
-}
-
-.footer .menu__link {
-	font-size: 15px;
-}
 
 /* ******************* CURRICULUM VITAE ******************* */
 
-
-#cv-container ul {
-	 list-style-type: none;	
-}
-
 .cv-list ul{
+	list-style-type: none; 
 	 display: flex;
 	 flex-wrap: wrap;
-	 flex-grow: 1; /* default 0 */
-	 flex-direction: column;
-
-	
+	 
+	 flex-direction: row;
+	 justify-content: space-between;	
 }
 
 .cv-list ul li{
-	 display: flex;
-	 flex-wrap: wrap;	
+	border: solid 1px white;
+	flex-grow: 1; /* default 0 */
+	flex-basis: calc(10vw + 10vh);
+	
+	padding: calc(15px + 1vh + 1vw);
+	margin: calc(1vw + 1vh);
 
+	background: linear-gradient(360deg, rgba(0,0,0, 0.4),rgba(0,0,0,0));
 }
-
-#cv-container ul li p {	
-
-}
-
 
 
 .date {
-	font-size: calc(15px + 2vh);		
-	margin-right: 4.5vw;
-	margin-bottom: 4.5vw;
+	font-size: calc(15px + 2vh);
 	
-
-
 }
 
 .duration {
 	font-size: calc(15px + 1vh);
-	justify-content: center;
-	align-items: center;
-	vertical-align:middle;
-	margin-left: 2.5vw;
-
+	font-style: italic;
 }
 
 .text {
 	font-size: calc(10px + .5vh);
-	justify-content: center;
-	align-items: center;
-	vertical-align:middle;
 }
 
 #cv-container .profile_img {
@@ -152,6 +157,7 @@ width: 200px;
   float: left;
   animation-iteration-count: infinite;
   display: inline;
+
 }
 
 @keyframes shake {
