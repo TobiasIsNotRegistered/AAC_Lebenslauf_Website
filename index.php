@@ -64,8 +64,10 @@ $days  = $num;
 
 echo "Uptime: " . $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
 
+?>
+  ]
 
-  ] </p>
+   </p>
   <div class="emptydiv"></div>
   <p>This site is currently hosted on my raspberryPi and under construction.</p>
   <div class="emptydiv"></div>
