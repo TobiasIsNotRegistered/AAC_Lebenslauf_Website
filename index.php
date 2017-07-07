@@ -55,7 +55,7 @@
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <div class="emptydiv"></div>
 
-  <p> This website is currently hosted on a RaspberryPi 3 (Apache2) server and online since: <?php
+  <p> This website is currently hosted on a RaspberryPi 3 (Apache2) server and online since <div class="php_output"><?php
 
 $str   = file_get_contents('/proc/uptime');
 $num   = floatval($str);
@@ -64,9 +64,9 @@ $mins  = $num % 60;      $num = (int)($num / 60);
 $hours = $num % 24;      $num = (int)($num / 24);
 $days  = $num;
 
-echo  $days . " days " . $hours . "hours" . $mins . "minutes and" . intval($secs) . "seconds";
+echo  $days . " days " . $hours . " hours" . $mins . " minutes and" . intval($secs) . " seconds";
 
-?>
+?></div>
   .
 
    </p>
