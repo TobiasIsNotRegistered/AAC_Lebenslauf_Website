@@ -22,15 +22,11 @@
 }
 
 body{
-	
-	min-height: 110vh;
+  	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0,0,0, 0.0) ), url("../images/clouds.jpg"); 
+  	background:  url('../images/patterns/ep_naturalblack.png');
 
-  	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0, 0.6) ), url("../images/clouds.jpg"); 
-  	
-  	background-repeat: no-repeat;
+  	background-repeat: repeat;
   	background-attachment: fixed;
-  	background-size: cover;
-  	background-height: 100vh;
   	line-height: 1.5;
     
 }
@@ -48,10 +44,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', end
 */*/
 
 
+
 /* **************** ALL CONTENT_CONTAINERS ************** */
 
 .container {
 	overflow: hidden;
+	
 }
 
 .container p {
@@ -69,6 +67,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', end
 
 .container a {
 	font-size: calc(15px + .5vh);
+}
+
+.titel {
+	background: url('../images/patterns/dark-triangles.png');
+	
+	padding: calc(4vw + 4vh);
+	padding-top: 0vh;
+	padding-bottom: 2vh;
+
+	-webkit-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
 }
 
 
@@ -89,6 +99,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', end
 #landingpage-container{
 	text-align: center;
 	
+	
+	
 }
 
 .emptydiv {
@@ -96,7 +108,40 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', end
 }
 
 
+.footer{
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 90vh;
+	min-width: 100%;
+	
+	
+	padding: calc(4vw + 4vh);
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+
+	-webkit-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+}
+
+
 /* ******************* CURRICULUM VITAE ******************* */
+
+#cv-container{
+	
+	
+}
+
+.cv-list {
+	padding: calc(4vw + 0vh);
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+
+	 
+
+	
+
+}
 
 .cv-list ul{
 	list-style-type: none; 
@@ -104,28 +149,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', end
 	 flex-wrap: wrap;
 	 
 	 flex-direction: row;
-	 justify-content: space-between;	
-}
+	 justify-content: space-between;
+	}
 
 .cv-list ul li{
 	
 	flex-grow: 1; /* default 0 */
-	flex-basis: calc(10vw + 10vh);
+	flex-basis: calc(15vw + 15vh);
 	
 	padding: calc(15px + 1vh + 1vw);
 	margin: calc(1vw + 1vh);
 
-	background: linear-gradient(360deg, rgba(255,255,255, 0.1),rgba(255,255,255,0.3));
+	background: url('../images/patterns/dark-triangles.png');
+	
 
 	-webkit-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
--moz-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
 }
 
 
 .date {
 	font-size: calc(15px + 2vh);
-	border: solid 1px red;
+	
 	margin: auto;
 	
 }
@@ -150,6 +196,10 @@ width: 200px;
   margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
+
+  -webkit-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 45px 2px rgba(0,0,0,0.75);
 
 }
 

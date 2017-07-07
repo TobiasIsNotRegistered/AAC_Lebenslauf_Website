@@ -11,6 +11,7 @@
 
 <header class="header">
 
+
   <div class="burger">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
@@ -47,7 +48,7 @@
 
 
 <div class="container" id="landingpage-container">
-
+<div class="titel">
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
   Hello, today is <?php echo date('l, F jS, Y'); ?>.
   <p> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
@@ -68,20 +69,29 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
    </p>
   <div class="emptydiv"></div>
   <p>This site is currently hosted on my raspberryPi and under construction.</p>
-  <div class="emptydiv"></div>
-  <div class="emptydiv"></div>
   
-  <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+  </div class="titel">
+
+  <div class="emptydiv"></div>
+  <div class="emptydiv"></div>
+  <div class="emptydiv"></div>
+
+
+  <div class="footer">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
     <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
+  </div class="footer">
     
 </div>
 
 
 
 <div class ="container" id="cv-container">
-<h2>Curriculum vitae</h2>
-   <p class="contact">
-    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div></p>
+    
+    <div class="titel">
+    <h2>Curriculum vitae</h2>
+    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div>
+    </div>
 
    <div class="profile_img"></div>
    
@@ -240,8 +250,8 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
   window.onload = function() { 
 
     //only display the landingpage-container when entering the site
-    document.getElementById('landingpage-container').style.display = 'none';  
-    document.getElementById('cv-container').style.display = 'block';
+    document.getElementById('landingpage-container').style.display = 'block';  
+    document.getElementById('cv-container').style.display = 'none';
     document.getElementById('tba-container').style.display = 'none';
 
     //adding ecent-listeners to the menu-buttons

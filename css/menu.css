@@ -8,6 +8,11 @@
   z-index: 5;
   width: 100%; }
 
+.burger_underlay {
+  position: fixed;
+  left: 0;
+  top: 0; }
+
 .burger {
   position: absolute;
   z-index: 10;
@@ -63,7 +68,7 @@
   .menu__list {
     margin: 0;
     padding: 0;
-    background: #2d9e94;
+    background: #292929;
     list-style-type: none;
     transform: translate3d(100%, 0, 0);
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -74,7 +79,7 @@
     .menu__list--active {
       transform: translate3d(0, 0, 0); }
   .menu__brand {
-    background: #38C5B9;
+    background: #333;
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -179,9 +184,9 @@ main {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  padding: 8vw;
-  padding-top: 50px;
-  padding-bottom: 50px; }
+  padding: 0vw;
+  padding-top: 10vh;
+  padding-bottom: 2vh; }
   main h1 > a {
     color: white;
     text-decoration: none;
