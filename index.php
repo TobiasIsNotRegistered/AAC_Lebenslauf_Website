@@ -12,13 +12,15 @@
 <header class="header">
 
 
-  <div class="burger">   
+ <div class="burger">   
 
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
-    <div class="burger__bg"></div> 
-  </div>
+    <div class="burger__bg"></div>
+</div>
+
+
 
 
   <nav class="menu">
@@ -35,6 +37,7 @@
     <ul class="menu__list">
       <li class="menu__item" id="cv-link">  <a href="#" class="menu__link"><i class="fa fa-info-circle"></i> curriculum vitae</a></li>
       <li class="menu__item" id="tba-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> to be announced</a></li>
+      <li class="menu__item" id="tba2-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> even more content?</a></li>
       <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i> facebook</a></li>
       <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i> soundcloud</a></li>
      
@@ -50,30 +53,24 @@
 
 <div class="container" id="landingpage-container">
 <div class="titel">
-  <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
-  Hello, today is <?php echo date('l, F jS, Y'); ?>.
+  <h1>Welcome </h1>  
+  today's <?php echo date('l, F jS, Y'); ?>
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <div class="emptydiv"></div>
 
-  <p> This website is currently hosted on a RaspberryPi 3 (Apache2) server and online since <div class="php_output"><?php
+  <p> This website is currently hosted on a RaspberryPi 3B Apache2 server and online since <div class="php_output"><?php
 
-$str   = file_get_contents('/proc/uptime');
-$num   = floatval($str);
-$secs  = fmod($num, 60); $num = (int)($num / 60);
-$mins  = $num % 60;      $num = (int)($num / 60);
-$hours = $num % 24;      $num = (int)($num / 24);
-$days  = $num;
+          $str   = file_get_contents('/proc/uptime');
+          $num   = floatval($str);
+          $secs  = fmod($num, 60); $num = (int)($num / 60);
+          $mins  = $num % 60;      $num = (int)($num / 60);
+          $hours = $num % 24;      $num = (int)($num / 24);
+          $days  = $num;
 
-echo  $days . " days " . $hours . " hours" . $mins . " minutes and" . intval($secs) . " seconds";
-
-?></div>
-  .
-
-   </p>
+          echo  $days . " days, " . $hours . " hours, " . $mins . " minutes and " . intval($secs) . " seconds!";?></div> 
+  </p>
  
-  </div class="titel">
-
- 
+</div class="titel"> 
 
 
   <div class="footer">
@@ -81,7 +78,7 @@ echo  $days . " days " . $hours . " hours" . $mins . " minutes and" . intval($se
     <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
   </div class="footer">
     
-</div>
+</div class="container">
 
 
 
@@ -154,7 +151,10 @@ echo  $days . " days " . $hours . " hours" . $mins . " minutes and" . intval($se
 
 <div class ="container" id ="tba-container">
 
- <h1>This section is under construction. Please come again later :)</h1>  
+ <div class="titel">
+    <h2>under construction</h2>
+    <p> this page is currently under construction. please come again later!
+    </div>
 
 </div>
 

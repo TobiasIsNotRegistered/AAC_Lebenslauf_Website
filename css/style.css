@@ -44,7 +44,7 @@ body{
 /* **************** ALL CONTENT_CONTAINERS ************** */
 
 .container {
-	
+	margin-top: 10vh; 
 	
 }
 
@@ -62,7 +62,7 @@ body{
 }
 
 .container a {
-	font-size: calc(15px + .5vh);
+	font-size: calc(15px + .2vw);
 }
 
 .titel {
@@ -121,9 +121,9 @@ body{
 	padding-top: 2vh;
 	padding-bottom: 2vh;
 
-	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
-    -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
-    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
 
 	
 }
