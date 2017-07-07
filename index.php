@@ -49,7 +49,7 @@
 <div class="container" id="landingpage-container">
 
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
-  <p>Hello, today is <?php echo date('l, F jS, Y'); ?>.</p>
+  Hello, today is <?php echo date('l, F jS, Y'); ?>.
   <p> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
   <p> [online since: 
 

@@ -63,7 +63,7 @@
   .menu__list {
     margin: 0;
     padding: 0;
-    background: #4d566d;
+    background: #2d9e94;
     list-style-type: none;
     transform: translate3d(100%, 0, 0);
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -74,7 +74,7 @@
     .menu__list--active {
       transform: translate3d(0, 0, 0); }
   .menu__brand {
-    background: #606c88;
+    background: #38C5B9;
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
