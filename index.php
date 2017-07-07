@@ -51,9 +51,7 @@
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
   Hello, today is <?php echo date('l, F jS, Y'); ?>.
   <p> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
-  <p> [online since: 
-
-<?php
+  <p> [online since: <?php
 
 $str   = file_get_contents('/proc/uptime');
 $num   = floatval($str);
@@ -62,7 +60,7 @@ $mins  = $num % 60;      $num = (int)($num / 60);
 $hours = $num % 24;      $num = (int)($num / 24);
 $days  = $num;
 
-echo "Uptime: " . $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
+echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
 
 ?>
   ]
