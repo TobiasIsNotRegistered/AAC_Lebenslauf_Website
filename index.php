@@ -12,10 +12,12 @@
 <header class="header">
 
 
-  <div class="burger">
+  <div class="burger">   
+
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
+    <div class="burger__bg"></div> 
   </div>
 
 
@@ -31,7 +33,6 @@
       </div>
     </div>
     <ul class="menu__list">
-
       <li class="menu__item" id="cv-link">  <a href="#" class="menu__link"><i class="fa fa-info-circle"></i> curriculum vitae</a></li>
       <li class="menu__item" id="tba-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> to be announced</a></li>
       <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i> facebook</a></li>
@@ -51,7 +52,7 @@
 <div class="titel">
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
   Hello, today is <?php echo date('l, F jS, Y'); ?>.
-  <p> <i class="fa fa-clock-o fa-spin" aria-hidden="true"></i> <a id="time"></a></p>
+  <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <p> [online since: <?php
 
 $str   = file_get_contents('/proc/uptime');
@@ -68,13 +69,10 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
 
    </p>
   <div class="emptydiv"></div>
-  <p>This site is currently hosted on my raspberryPi and under construction.</p>
-  
+  <p>This site is currently hosted on my raspberryPi and under construction.</p>  
   </div class="titel">
 
-  <div class="emptydiv"></div>
-  <div class="emptydiv"></div>
-  <div class="emptydiv"></div>
+ 
 
 
   <div class="footer">
@@ -93,10 +91,13 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div>
     </div>
 
-   <div class="profile_img"></div>
+   
    
 
    <div class="cv-list">
+      
+      <div class="profile_img"></div>
+
       <ul>
         <li>
              <span class="date">since 2015</span>  
@@ -120,26 +121,33 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
         </li>
         <li>
              <span class="date">2010 - 2013 </span>
-             <span class="duration"></span> 
+             <span class="duration">3 years</span> 
              <span class="text">Technical vocational baccalaurate diploma Berufsschule Lenzburg  Lenzburg, AG</span>      
         </li>
         <li>
              <span class="date">2009 - 2013 </span>
-             <span class="duration"></span>
+             <span class="duration">4 years</span>
              <span class="text">Apprenticeship civil engineering Porta AG Brugg, AG / Interlaken, BE</span>       
         </li>
         <li>
              <span class="date">2006 - 2009</span>
-             <span class="duration"></span>
+             <span class="duration">3 years</span>
              <span class="text">Bezirksschule Klingnau Klingnau, AG</span>        
         </li>
         <li>
              <span class="date">2006 - 2009</span> 
-             <span class="duration"></span> 
+             <span class="duration">3 years</span> 
              <span class="text">elementary school Zürich ZH</span>      
         </li>
       </ul>
    </div>
+
+<div class="footer">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
+  </div class="footer">
+
+
 </div>
 
 

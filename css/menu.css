@@ -8,11 +8,6 @@
   z-index: 5;
   width: 100%; }
 
-.burger_underlay {
-  position: fixed;
-  left: 0;
-  top: 0; }
-
 .burger {
   position: absolute;
   z-index: 10;
@@ -37,6 +32,16 @@
     /* custom */ }
     .burger__patty:last-child {
       margin-bottom: 0; }
+  .burger__bg {
+    position: absolute;
+    right: -50px;
+    top: -50px;
+    height: 100px;
+    width: 100px;
+    margin: -4px;
+    background: black;
+    border-radius: 50%;
+    z-index: -50; }
   .burger--close {
     transform: rotate(270deg); }
     .burger--close .burger__patty:nth-child(1) {
@@ -68,7 +73,11 @@
   .menu__list {
     margin: 0;
     padding: 0;
-    background: #292929;
+    background: url("../images/patterns/ignasi_pattern_s.png");
+    background-attachment: fixed;
+    -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
     list-style-type: none;
     transform: translate3d(100%, 0, 0);
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -79,7 +88,8 @@
     .menu__list--active {
       transform: translate3d(0, 0, 0); }
   .menu__brand {
-    background: #333;
+    background: url("../images/patterns/ignasi_pattern_s.png");
+    background-attachment: fixed;
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -101,9 +111,8 @@
     font-size: 30px;
     padding: 5px 0;
     font-weight: 300;
-    color: white;
+    color: black;
     text-decoration: none;
-    color: white;
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
@@ -123,8 +132,11 @@
       -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
       transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
       /* custom */ }
-    .menu__link:hover:before {
-      width: 100%; }
+    .menu__link:hover {
+      color: black; }
+      .menu__link:hover:before {
+        width: 100%;
+        background-color: black; }
   .menu .menu__item:nth-child(1) {
     transition-delay: 0; }
   .menu .menu__item:nth-child(2) {
@@ -183,7 +195,9 @@ main {
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
+  /*
   justify-content: center;
+  */
   padding: 0vw;
   padding-top: 10vh;
   padding-bottom: 2vh; }

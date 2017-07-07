@@ -27,13 +27,6 @@ $primary-color: #333;
   width: 100%;
 }
 
-.burger_underlay{
-  position: fixed;
-  left: 0;
-  top: 0;
-
-
-}
 
 
 .burger {
@@ -55,6 +48,18 @@ $primary-color: #333;
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__bg {
+   position: absolute;
+    right: -50px;
+    top: -50px;
+    height: 100px;
+    width: 100px;
+    margin: -4px;
+    background: black;
+    border-radius: 50%;
+    z-index: -50;
   }
   
   // transform burger into 'x'
@@ -107,7 +112,14 @@ $primary-color: #333;
   &__list {
     margin: 0;
     padding: 0;
-    background: mix(black, $primary-color, 20);
+    background: url('../images/patterns/ignasi_pattern_s.png');
+    background-attachment: fixed;
+    
+-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+
+
     list-style-type: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;
@@ -120,7 +132,8 @@ $primary-color: #333;
   }
   
   &__brand {
-    background: $primary-color;
+     background: url('../images/patterns/ignasi_pattern_s.png');
+     background-attachment: fixed;
 
     @include easeOut;
     transform: translate3d(-100%, 0, 0);
@@ -152,9 +165,8 @@ $primary-color: #333;
     font-size: 30px;
     padding: 5px 0;
     font-weight: 300;
-    color: white;
+    color: black;
     text-decoration: none;
-    color: white;
     @include easeOut;
     
     &:before {
@@ -170,8 +182,10 @@ $primary-color: #333;
     }
     
     &:hover {
+     color: black;
       &:before {
         width: 100%;
+        background-color: black;
       }
     }
 
@@ -254,7 +268,9 @@ main {
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
+  /*
   justify-content: center;
+  */
   padding: 0vw;
   padding-top: 10vh;
   padding-bottom: 2vh;
