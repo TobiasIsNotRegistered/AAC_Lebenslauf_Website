@@ -20,6 +20,8 @@
   -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
   transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
   /* custom */ }
+  .burger:hover {
+    transform: translate3d(-25px, 25px, 0); }
   .burger__patty {
     width: 28px;
     height: 2px;
@@ -34,16 +36,15 @@
       margin-bottom: 0; }
   .burger__bg {
     position: absolute;
-    right: -50px;
-    top: -50px;
-    height: 100px;
-    width: 100px;
-    margin: -4px;
+    right: calc(-50px - .3vh);
+    top: calc(-50px - .3vh);
+    height: calc(100px + .2vw);
+    width: calc(100px + .2vw);
     background: black;
     border-radius: 50%;
-    z-index: -50; }
+    z-index: -1; }
   .burger--close {
-    transform: rotate(270deg); }
+    transform: rotate(0deg); }
     .burger--close .burger__patty:nth-child(1) {
       transform: rotate(405deg) translate(4px, 4px); }
     .burger--close .burger__patty:nth-child(2) {
@@ -153,6 +154,8 @@
 @media screen and (max-width: 768px) {
   .burger--close {
     transform: translate(0px, 30vh); }
+    .burger--close:hover {
+      transform: translate(0px, 30vh); }
 
   ul.menu__list,
   div.menu__brand {
@@ -185,7 +188,10 @@
   background-position: center;
   border-radius: 50%;
   padding: 10vh;
-  margin: auto; }
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.35); }
 
 h1, h2, h3, p {
   margin: 0;

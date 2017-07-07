@@ -53,7 +53,9 @@
   <h1>Welcome <i class="fa fa-smile-o" aria-hidden="true"></i></h1>  
   Hello, today is <?php echo date('l, F jS, Y'); ?>.
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
-  <p> [online since: <?php
+  <div class="emptydiv"></div>
+
+  <p> This website is currently hosted on a RaspberryPi 3 (Apache2) server and online since: <?php
 
 $str   = file_get_contents('/proc/uptime');
 $num   = floatval($str);
@@ -62,14 +64,13 @@ $mins  = $num % 60;      $num = (int)($num / 60);
 $hours = $num % 24;      $num = (int)($num / 24);
 $days  = $num;
 
-echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
+echo  $days . " days " . $hours . "hours" . $mins . "minutes and" . intval($secs) . "seconds";
 
 ?>
-  ]
+  .
 
    </p>
-  <div class="emptydiv"></div>
-  <p>This site is currently hosted on my raspberryPi and under construction.</p>  
+ 
   </div class="titel">
 
  
@@ -171,7 +172,6 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
   
   var Menu = (function() {
     var logo = document.querySelector('#logo-link')
-    var canvas = document.querySelector('main');
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.menu');
     var menuList = document.querySelector('.menu__list');
@@ -206,7 +206,7 @@ echo  $days . " days " . $hours . ":" . $mins . ":" . intval($secs);
     
     var bindActions = function() {
       burger.addEventListener('click', toggleMenu, false);
-      canvas.addEventListener('click', toggleMenu, false); 
+ 
       for (var i = 0, ii = menuItems.length; i < ii; i++) {
           menuItems[i].addEventListener('click', toggleMenu, false); 
         }  
