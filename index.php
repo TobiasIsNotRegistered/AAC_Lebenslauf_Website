@@ -22,7 +22,7 @@
 <!-- used for loader -->
 <div id="loader"></div>
 
-<header class="header">
+<header class="header" id="headerID">
  <div class="burger">   
 
     <div class="burger__patty"></div>
@@ -269,6 +269,7 @@
     document.getElementById('landingpage-container').style.display = 'none';  
     document.getElementById('cv-container').style.display = 'none';
     document.getElementById('tba-container').style.display = 'none';
+    document.getElementById('headerID').style.display = 'none';
     triggerLoader();
 
     //adding ecent-listeners to the menu-buttons
@@ -298,6 +299,7 @@
     function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("landingpage-container").style.display = "block";
+    document.getElementById('headerID').style.display = 'block';
 }
 
 
@@ -309,6 +311,7 @@
 <!-- ********************************* JS: LOADER ******************************* -->
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 -->
 
+<!--
 <script>
 var myVar;
 
@@ -322,3 +325,4 @@ function showPage() {
 }
 </script>
 
+-->
