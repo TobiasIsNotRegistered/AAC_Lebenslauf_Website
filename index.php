@@ -1,17 +1,28 @@
 
 <head>
-<link rel="stylesheet" type="text/css" href="css/menu.css">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Tobias Sigel</title>
+
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/loader.css">
+
+<meta name="author" content="Tobias Sigel">
+<meta name="keywords" content="Tobias, Sigel, Curriculum, Vitae">
+<meta name="description" content="Curriculum vitae Tobias Sigel">
+
 </head>
 
 
 <body>
 
+<!-- used for loader -->
+<div id="loader"></div>
+
 <header class="header">
-
-
  <div class="burger">   
 
     <div class="burger__patty"></div>
@@ -19,9 +30,6 @@
     <div class="burger__patty"></div>
     <div class="burger__bg"></div>
 </div>
-
-
-
 
   <nav class="menu">
     <div class="menu__brand">
@@ -255,12 +263,13 @@
 
 <!-- *************************** JS: HIDE DIVS************************************ -->
 <script type="text/javascript">
-  window.onload = function() { 
 
+  window.onload = function() { 
     //only display the landingpage-container when entering the site
-    document.getElementById('landingpage-container').style.display = 'block';  
+    document.getElementById('landingpage-container').style.display = 'none';  
     document.getElementById('cv-container').style.display = 'none';
     document.getElementById('tba-container').style.display = 'none';
+    triggerLoader();
 
     //adding ecent-listeners to the menu-buttons
     document.getElementById('cv-link').addEventListener('click', function (){  
@@ -282,7 +291,34 @@
     }, false);
 
 
+     function triggerLoader() {
+    var myVar = setTimeout(showPage, 2000);
+    }
+
+    function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("landingpage-container").style.display = "block";
+}
+
+
 
   };
+</script>
+
+
+<!-- ********************************* JS: LOADER ******************************* -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 -->
+
+<script>
+var myVar;
+
+function triggerLoader() {
+    myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("landingpage-container").style.display = "block";
+}
 </script>
 

@@ -129,8 +129,8 @@ $primary-color: #333;
     background-attachment: fixed;
     
     -webkit-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
--moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+     box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
 
 
     list-style-type: none;
@@ -177,7 +177,7 @@ box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
   &__link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: calc(10px + 1vw + 1vh);
     padding: 5px 0;
     font-weight: 300;
     color: black;
@@ -236,7 +236,7 @@ box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
   float: none;
   width: 100%;
   min-height: 30vh;
-
+  
 
 
    &--active {
