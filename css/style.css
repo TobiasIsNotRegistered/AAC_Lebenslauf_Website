@@ -177,22 +177,22 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 
 
 .date {
-	font-size: calc(15px + 2vh);
-	
-	margin: auto;
+	font-size: calc(15px + 2vh);	
+	margin-right: 25px;
 	
 }
 
 .duration {
-	font-size: calc(15px + 1vh);
+	font-size: calc(10px + 1vh);
 	font-style: italic;
-	margin-left: 2vw;
-	margin-right: 2vw;
+	white-space: nowrap;
 }
 
 .text {
 	font-size: calc(10px + .5vh);
 	text-align: justify;
+/* used to force linebreak */
+	display: block;
 }
 
 #cv-container .profile_img {

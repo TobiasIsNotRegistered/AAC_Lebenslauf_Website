@@ -3,16 +3,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<meta name="author" content="Tobias Sigel">
+<meta name="keywords" content="Tobias, Sigel, Curriculum, Vitae">
+<meta name="description" content="Curriculum vitae Tobias Sigel">
+
 <title>Tobias Sigel</title>
 
 <link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loader.css">
-
-<meta name="author" content="Tobias Sigel">
-<meta name="keywords" content="Tobias, Sigel, Curriculum, Vitae">
-<meta name="description" content="Curriculum vitae Tobias Sigel">
 
 </head>
 
@@ -106,44 +106,49 @@
 
       <ul>
         <li>
+             <span class="date">since 2017</span>  
+             <span class="duration">until now</span>   
+             <span class="text">database evaluation & optimization at DynaEngineering AG. Windisch, AG</span>   
+        </li>
+        <li>
              <span class="date">since 2015</span>  
              <span class="duration">until now</span>   
-             <span class="text">Bachelor of Science in IT Course iCompetence FHNW Windisch, AG</span>   
+             <span class="text">Bachelor of Science in IT, Course iCompetence. FHNW Windisch, AG</span>   
         </li>
         <li>
              <span class="date">2015 - 2015</span>  
              <span class="duration">4 months</span>     
-             <span class="text">Community service at KSP Baden Gardening & facility management Baden, AG</span>    
+             <span class="text">Community service at KSP Baden, Gardening & facility management. Baden, AG</span>    
         </li>
          <li>
              <span class="date">2014 - 2015</span>
              <span class="duration">8 months</span>
-             <span class="text">Civil engineer at Ingenieurbüro Senn AG Support of civil engineering projects Nussbaumen, AG</span>          
+             <span class="text">Civil engineer at Ingenieurbüro Senn AG, support of civil engineering projects. Nussbaumen, AG</span>          
         </li>
         <li>
              <span class="date">2013 - 2014 </span>
              <span class="duration">8 months</span> 
-             <span class="text">Community service at Stage-on-air Supervising employees and coordinating workloads Aarau, AG</span>        
+             <span class="text">Community service at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
         </li>
         <li>
              <span class="date">2010 - 2013 </span>
              <span class="duration">3 years</span> 
-             <span class="text">Technical vocational baccalaurate diploma Berufsschule Lenzburg  Lenzburg, AG</span>      
+             <span class="text">Technical vocational baccalaurate diploma, Berufsschule Lenzburg. Lenzburg, AG</span>      
         </li>
         <li>
              <span class="date">2009 - 2013 </span>
              <span class="duration">4 years</span>
-             <span class="text">Apprenticeship civil engineering Porta AG Brugg, AG / Interlaken, BE</span>       
+             <span class="text">Apprenticeship civil engineering, Porta AG. Brugg, AG / Interlaken, BE</span>       
         </li>
         <li>
              <span class="date">2006 - 2009</span>
              <span class="duration">3 years</span>
-             <span class="text">Bezirksschule Klingnau Klingnau, AG</span>        
+             <span class="text">Bezirksschule Klingnau. Klingnau, AG</span>        
         </li>
         <li>
              <span class="date">2006 - 2009</span> 
              <span class="duration">3 years</span> 
-             <span class="text">elementary school Zürich ZH</span>      
+             <span class="text">elementary school. Zürich ZH</span>      
         </li>
       </ul>
    </div>
@@ -172,6 +177,7 @@
 
 
 </body>
+
 
 <!-- *************************** JS: MENU************************************ -->
 
@@ -326,3 +332,4 @@ function showPage() {
 </script>
 
 -->
+
