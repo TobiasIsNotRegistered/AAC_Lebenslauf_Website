@@ -66,7 +66,9 @@
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <div class="emptydiv"></div>
 
-  <p> This website is currently hosted on a RaspberryPi 3B Apache2 server and online since <div class="php_output"><?php
+  <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=tobiassigel.redirectme.net&digit=style/plain/1/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.corriereserale.com/orzaiolo-rimedi-naturali/" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">seems like the visitor-counter is not working at the moment!</a>
+
+  <p> This website is currently hosted on a RaspberryPi 3B, Apache2-Server and online since <div class="php_output"><?php
 
           $str   = file_get_contents('/proc/uptime');
           $num   = floatval($str);
