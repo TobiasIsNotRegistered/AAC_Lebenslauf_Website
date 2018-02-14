@@ -273,14 +273,15 @@
 <script type="text/javascript">
 
   window.onload = function() { 
+     triggerLoader();
     //only display the landingpage-container when entering the site
     document.getElementById('landingpage-container').style.display = 'none';  
     document.getElementById('cv-container').style.display = 'none';
     document.getElementById('tba-container').style.display = 'none';
     document.getElementById('headerID').style.display = 'none';
-    triggerLoader();
+   
 
-    //adding ecent-listeners to the menu-buttons
+    //adding event-listeners to the menu-buttons
     document.getElementById('cv-link').addEventListener('click', function (){  
       document.getElementById('landingpage-container').style.display = 'none';  
       document.getElementById('cv-container').style.display = 'block';      
