@@ -66,6 +66,8 @@
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <div class="emptydiv"></div>
 
+
+
  You are visitor number: <?php include("visitor-counter.php"); echo IncrementCounter(); ?>
 
   <p> This website is currently hosted on a RaspberryPi 3B, Apache2-Server and online since <div class="php_output"><?php

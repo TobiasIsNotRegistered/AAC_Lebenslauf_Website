@@ -1,7 +1,7 @@
 <?php
 
 define("COUNTER_START_VALUE", 0);
-define("COUNTER_LOG", "idious-counter.log"); //name of file you want to use to save the counter value
+define("COUNTER_LOG", "visitor-counter.log"); //name of file you want to use to save the counter value
 
 /*************************************************************************************************/
 function IncrementCounter() 
@@ -24,7 +24,7 @@ function IncrementCounter()
    //Writing new counter value:
    if(!fwrite($fh, ++$count))
       return "Error";
-   if(!fclose($fh);)
+   if(!fclose($fh))
       return "Error";       
 
    return str_pad($count, 9, '0', STR_PAD_LEFT);
