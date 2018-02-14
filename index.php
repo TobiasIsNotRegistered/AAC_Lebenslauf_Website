@@ -66,7 +66,7 @@
   <p> <i class="fa fa-clock-o" aria-hidden="true"></i> <a id="time"></a></p>
   <div class="emptydiv"></div>
 
- <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=tobiassigel.redirectme.net17191417&digit=style/plain/5/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://www.corriereserale.com" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;">corriere</a>
+ You are visitor number: <?php include("visitor-counter.php"); echo IncrementCounter(); ?>
 
   <p> This website is currently hosted on a RaspberryPi 3B, Apache2-Server and online since <div class="php_output"><?php
 
