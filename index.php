@@ -108,8 +108,7 @@
     </div>
    
    <div class="cv-list">      
-      <div class="profile_img"></div>
-
+    
       <ul>
         <li>
              <span class="date">since 2017</span>  
@@ -124,7 +123,7 @@
         <li>
              <span class="date">2015 - 2015</span>  
              <span class="duration">4 months</span>     
-             <span class="text">Community service at KSB Baden, Gardening & facility management. Baden, AG</span>    
+             <span class="text">Alternative service (in lieu of military service) in KSB, Gardening & facility management. Baden, AG</span>    
         </li>
          <li>
              <span class="date">2014 - 2015</span>
@@ -171,8 +170,11 @@
 
  <div class="titel">
     <h2>about: under construction</h2>
-    <p> this page is currently under construction. please come again later!
+    <p> this page is currently under construction. 
     </div>
+
+    Test
+    <div class="profile_img"></div>
 
 <div class="footer">
     <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
@@ -187,8 +189,60 @@
 
  <div class="titel">
     <h2>projects: under construction</h2>
-    <p> this page is currently under construction. please come again later!
+    <p> this page is currently under construction.
     </div>
+
+ <div class="projects-list">      
+
+      <ul>
+        <li>
+             <span class="date">This website</span>  
+             <span class="duration">CV hosted on a Raspberry Pi</span>   
+             <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and learn everything related to it.</span>
+             <span class="keywords">Keywords: Raspberry Pi, PortForwarding, staticIP's, Html5, CSS3, JS, Php, Responsive Web-Design</span>      
+        </li>
+        <li>
+             <span class="date">GroupHub</span>  
+             <span class="duration">Android-App, native</span>   
+             <span class="text">IP5-Project for the FHNW.</span>   
+        </li>
+        <li>
+             <span class="date">2015 - 2015</span>  
+             <span class="duration">4 months</span>     
+             <span class="text">Alternative service (in lieu of military service) in KSB, Gardening & facility management. Baden, AG</span>    
+        </li>
+         <li>
+             <span class="date">2014 - 2015</span>
+             <span class="duration">8 months</span>
+             <span class="text">Civil engineer at Ingenieurbüro Senn AG, support of civil engineering projects. Nussbaumen, AG</span>          
+        </li>
+        <li>
+             <span class="date">2013 - 2014 </span>
+             <span class="duration">8 months</span> 
+             <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
+        </li>
+        <li>
+             <span class="date">2010 - 2013 </span>
+             <span class="duration">3 years</span> 
+             <span class="text">Technical vocational baccalaurate diploma, Berufsschule Lenzburg. Lenzburg, AG</span>      
+        </li>
+        <li>
+             <span class="date">2009 - 2013 </span>
+             <span class="duration">4 years</span>
+             <span class="text">Apprenticeship civil engineering, Porta AG. Brugg, AG / Interlaken, BE</span>       
+        </li>
+        <li>
+             <span class="date">2006 - 2009</span>
+             <span class="duration">3 years</span>
+             <span class="text">Bezirksschule Klingnau. Klingnau, AG</span>        
+        </li>
+        <li>
+             <span class="date">2000 - 2006</span> 
+             <span class="duration">6 years</span> 
+             <span class="text">elementary school. Zürich ZH</span>      
+        </li>
+      </ul>
+   </div>
 
 <div class="footer">
     <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>

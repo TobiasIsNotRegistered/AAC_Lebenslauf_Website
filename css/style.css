@@ -170,26 +170,80 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
 
-.date {
+#cv-container .date {
 	font-size: calc(15px + 2vh);	
 	margin-right: 25px;
 	
 }
 
-.duration {
+#cv-container .duration {
 	font-size: calc(10px + 1vh);
 	font-style: italic;
 	white-space: nowrap;
 }
 
-.text {
+#cv-container .text {
 	font-size: calc(10px + .5vh);
 	text-align: justify;
 /* used to force linebreak */
 	display: block;
 }
 
-#cv-container .profile_img {
+/* ****************** Projects-list ********************** */
+
+.projects-list {
+	padding: calc(4vw + 0vh);
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+
+}
+
+.projects-list ul{
+	list-style-type: none; 
+	 display: flex;
+	 flex-wrap: wrap;
+	 
+	 flex-direction: row;
+	 justify-content: space-between;
+	}
+
+.projects-list ul li{
+	
+	flex-grow: 1; /* default 0 */
+	flex-basis: calc(15vw + 15vh);
+	
+	padding: calc(5px + 1vh + 1vw);
+	margin: calc(1vw + 1vh);
+
+	background: white;
+
+-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+}
+
+#projects-container .date {
+	font-size: calc(15px + 2vh);	
+	margin-right: 25px;
+	
+}
+
+#projects-container .duration {
+	font-size: calc(10px + 1vh);
+	font-style: italic;
+	white-space: nowrap;
+}
+
+#projects-container .text {
+	font-size: calc(10px + .5vh);
+	text-align: justify;
+/* used to force linebreak */
+	display: block;
+}
+
+/* ****************** ABOUT ***************************** */
+
+.profile_img {
 width: 200px;
   height: 200px;
   background-image: url("../images/curr_profil_img.jpg");
@@ -201,9 +255,6 @@ width: 200px;
   margin:auto;
   margin-top:calc(2vw + 2vh); 
   margin-bottom:calc(2vw + 2vh); 
-
-
- 
 }
 
 /* ****************** SHAKEABLE CONTENT ***************** */
