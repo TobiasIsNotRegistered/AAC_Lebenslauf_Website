@@ -124,7 +124,7 @@
         <li>
              <span class="date">2015 - 2015</span>  
              <span class="duration">4 months</span>     
-             <span class="text">Community service at KSP Baden, Gardening & facility management. Baden, AG</span>    
+             <span class="text">Community service at KSB Baden, Gardening & facility management. Baden, AG</span>    
         </li>
          <li>
              <span class="date">2014 - 2015</span>
@@ -134,7 +134,7 @@
         <li>
              <span class="date">2013 - 2014 </span>
              <span class="duration">8 months</span> 
-             <span class="text">Community service at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
+             <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
         </li>
         <li>
              <span class="date">2010 - 2013 </span>
