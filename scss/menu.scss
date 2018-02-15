@@ -3,7 +3,7 @@ $primary-color: #333;
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+
 }
 
 @mixin easeOut {
@@ -236,12 +236,9 @@ $primary-color: #333;
   float: none;
   width: 100%;
   min-height: 30vh;
-  
-
 
    &--active {
-     transform: translate3d(0, 0, 0);
-     
+     transform: translate3d(0, 0, 0);    
    }
  }
 
@@ -250,30 +247,24 @@ $primary-color: #333;
    transform: translate3d(0, 100%, 0);
  }
 
-
-
  .menu__brand {
    height: 25vh;
    transform: translate3d(0, -100%, 0);
-  
-
    .logo {
-     width: 90px;
-     height: 90px;
-   }
+   }     
  }
 }
 
-// make the demo look nice, not required for your own use.
+
 .logo {
-  width: 200px;
-  height: 200px;
+  width: calc(20px + 2vw + 2vh);
+  height: calc(20px + 2vw + 2vh);
   background-image: url("../images/1.jpg");
-  background-size: 200px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  padding: 100px;
+  padding: calc(20px + 2vw + 2vh);
+  background-size: 100%;
   margin: auto;
 
    -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);

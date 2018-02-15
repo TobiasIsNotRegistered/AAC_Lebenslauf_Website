@@ -45,7 +45,7 @@ body{
 
 .container {
 	margin-top: 10vh; 
-	
+	margin-bottom: 10vh
 }
 
 .container p {
@@ -94,9 +94,6 @@ body{
 	color:black;
 }
 
-
-
-
 /* ****************** LANDING PAGE ************************* */
 
 #landingpage-container{
@@ -112,19 +109,20 @@ body{
 	
 	position: absolute;
 	bottom: 0;
-	height: 100px;
+	/* height: 100px; */
 	width: 100%;
 
 	background: white;
 	
-	padding: calc(4vw + 4vh);
+	padding: 0; 
 	padding-top: 2vh;
 	padding-bottom: 2vh;
 
-	-webkit-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
--moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+	text-align: center;
 
+	-webkit-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
 	
 }
 
@@ -136,7 +134,7 @@ box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
 /* ******************* CURRICULUM VITAE ******************* */
 
 #cv-container{
-	
+
 	
 }
 
@@ -144,10 +142,6 @@ box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
 	padding: calc(4vw + 0vh);
 	padding-top: 2vh;
 	padding-bottom: 2vh;
-
-	 
-
-	
 
 }
 

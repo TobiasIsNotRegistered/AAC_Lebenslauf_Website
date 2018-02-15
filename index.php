@@ -1,4 +1,4 @@
-
+<!-- meta -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -31,6 +31,7 @@
     <div class="burger__bg"></div>
 </div>
 
+<!-- menu -->
   <nav class="menu">
     <div class="menu__brand">
       <a href="#"><div class="logo" id="logo-link"></div></a></br>
@@ -43,21 +44,26 @@
       </div>
     </div>
     <ul class="menu__list">
-      <li class="menu__item" id="cv-link">  <a href="#" class="menu__link"><i class="fa fa-info-circle"></i> curriculum vitae</a></li>
-      <li class="menu__item" id="tba-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> to be announced</a></li>
-      <li class="menu__item" id="tba2-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i> even more content?</a></li>
-      <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i> facebook</a></li>
-      <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i> soundcloud</a></li>
+      <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-facebook-square">  </i> Welcome</a></li>
+      <li class="menu__item" id="cv-link">       <a href="#" class="menu__link"><i class="fa fa-info-circle">      </i> Curriculum Vitae</a></li>
+      <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>
+      <li class="menu__item" id="about-link">    <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> About me</a></li>      
+      <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Contact</a></li>
+      <!-- 
+      <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i>facebook</a></li>
+      <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i>soundcloud</a></li>
+    -->
      
     </ul>
   </nav>  
 
 </header>
 
-<!-- ***************************** HTML: MAIN-CONTENT********************************** -->
+<!-- ***************************** MAIN-CONTENT********************************** -->
 
 <main>
 
+<!-- landingpage -->
 
 <div class="container" id="landingpage-container">
 <div class="titel">
@@ -92,7 +98,7 @@
     
 </div class="container">
 
-
+<!-- CV -->
 
 <div class ="container" id="cv-container">
     
@@ -100,12 +106,8 @@
     <h2>Curriculum vitae</h2>
     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div>
     </div>
-
    
-   
-
-   <div class="cv-list">
-      
+   <div class="cv-list">      
       <div class="profile_img"></div>
 
       <ul>
@@ -150,8 +152,8 @@
              <span class="text">Bezirksschule Klingnau. Klingnau, AG</span>        
         </li>
         <li>
-             <span class="date">2006 - 2009</span> 
-             <span class="duration">3 years</span> 
+             <span class="date">2000 - 2006</span> 
+             <span class="duration">6 years</span> 
              <span class="text">elementary school. Zürich ZH</span>      
         </li>
       </ul>
@@ -161,25 +163,57 @@
     <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
     <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
   </div class="footer">
-
-
 </div>
 
+<!-- about -->
 
-<div class ="container" id ="tba-container">
+<div class ="container" id ="about-container">
 
  <div class="titel">
-    <h2>under construction</h2>
+    <h2>about: under construction</h2>
     <p> this page is currently under construction. please come again later!
     </div>
 
+<div class="footer">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
+  </div class="footer">
+</div>
+</div>
+
+<!-- projects -->
+
+<div class ="container" id ="projects-container">
+
+ <div class="titel">
+    <h2>projects: under construction</h2>
+    <p> this page is currently under construction. please come again later!
+    </div>
+
+<div class="footer">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
+  </div class="footer">
+</div>
+</div>
+
+<!-- contacts -->
+
+<div class ="container" id ="contact-container">
+
+ <div class="titel">
+    <h2>contact: under construction</h2>
+    <p> this page is currently under construction. please come again later!
+    </div>
+
+<div class="footer">
+    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
+    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
+  </div class="footer">
+</div>
 </div>
 
 </main>
-
-
-
-
 </body>
 
 
@@ -275,31 +309,52 @@
 <script type="text/javascript">
 
   window.onload = function() { 
-     triggerLoader();
     //only display the landingpage-container when entering the site
-    document.getElementById('landingpage-container').style.display = 'none';  
-    document.getElementById('cv-container').style.display = 'none';
-    document.getElementById('tba-container').style.display = 'none';
-    document.getElementById('headerID').style.display = 'none';
-   
+    triggerLoader(); 
+    document.getElementById('headerID').style.display = 'none';   
+    hideAllDivs();
 
     //adding event-listeners to the menu-buttons
+    document.getElementById('welcome-link').addEventListener('click', function (){  
+      hideAllDivs(); 
+      document.title = "Welcome!";
+      document.getElementById('landingpage-container').style.display = 'block';      
+      
+    }, false);
+
     document.getElementById('cv-link').addEventListener('click', function (){  
-      document.getElementById('landingpage-container').style.display = 'none';  
+      hideAllDivs(); 
+      document.title = "Curriculum vitae";
       document.getElementById('cv-container').style.display = 'block';      
-      document.getElementById('tba-container').style.display = 'none';
+      
     }, false);
   
-     document.getElementById('tba-link').addEventListener('click', function (){  
-      document.getElementById('landingpage-container').style.display = 'none';  
-      document.getElementById('cv-container').style.display = 'none';      
-      document.getElementById('tba-container').style.display = 'block';
+     document.getElementById('about-link').addEventListener('click', function (){  
+      hideAllDivs();  
+      document.title = "about";
+      document.getElementById('about-container').style.display = 'block';      
+     
+    }, false);
+
+     document.getElementById('projects-link').addEventListener('click', function (){  
+      hideAllDivs(); 
+      document.title = "my projects";
+      document.getElementById('projects-container').style.display = 'block';      
+     
+    }, false);
+
+     document.getElementById('contact-link').addEventListener('click', function (){  
+      hideAllDivs();  
+      document.title = "contact";
+      document.getElementById('contact-container').style.display = 'block';      
+     
     }, false);
 
      document.getElementById('logo-link').addEventListener('click', function (){    
-      document.getElementById('landingpage-container').style.display = 'block';
-      document.getElementById('cv-container').style.display = 'none';      
-      document.getElementById('tba-container').style.display = 'none';
+       hideAllDivs();
+       document.title = "about";
+      document.getElementById('about-container').style.display = 'block';      
+      
     }, false);
 
 
@@ -311,30 +366,18 @@
     document.getElementById("loader").style.display = "none";
     document.getElementById("landingpage-container").style.display = "block";
     document.getElementById('headerID').style.display = 'block';
-}
+    }
 
+    function hideAllDivs(){
+    document.getElementById('landingpage-container').style.display = 'none';  
+    document.getElementById('cv-container').style.display = 'none';
+    document.getElementById('about-container').style.display = 'none';
+    document.getElementById('projects-container').style.display = 'none';
+    document.getElementById('contact-container').style.display = 'none';
+    }
 
-
-  };
+};
 </script>
 
 
-<!-- ********************************* JS: LOADER ******************************* -->
-<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader5 -->
-
-<!--
-<script>
-var myVar;
-
-function triggerLoader() {
-    myVar = setTimeout(showPage, 1000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("landingpage-container").style.display = "block";
-}
-</script>
-
--->
 
