@@ -178,8 +178,8 @@
     height: 25vh;
     transform: translate3d(0, -100%, 0); } }
 .logo {
-  width: calc(20px + 2vw + 2vh);
-  height: calc(20px + 2vw + 2vh);
+  width: calc(20px + 5%);
+  height: calc(20px + 5%);
   background-image: url("../images/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
