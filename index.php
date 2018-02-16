@@ -46,8 +46,7 @@
     <ul class="menu__list">
       <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-facebook-square">  </i> Welcome</a></li>
       <li class="menu__item" id="cv-link">       <a href="#" class="menu__link"><i class="fa fa-info-circle">      </i> Curriculum Vitae</a></li>
-      <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>
-      <li class="menu__item" id="about-link">    <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> About me</a></li>      
+      <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>   
       <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Contact</a></li>
      
     </ul>
@@ -87,7 +86,7 @@
 </div class="titel"> 
 
 
- <div w3-include-html="footer.html"></div>
+<div w3-include-html="footer.html"></div>
     
 </div class="container">
 
@@ -152,23 +151,7 @@
    </div>
 
 <div w3-include-html="footer.html"></div>
-</div>
-
-<!-- about -->
-
-<div class ="container" id ="about-container">
-
- <div class="titel">
-    <h2>about: under construction</h2>
-    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
-   <div class="menu__link"><a href="https://facebook.com/TobiasSigel"><i class="fa fa-facebook-square"></i> facebook</a></div>
-   <div class="menu__link"><a href="https://soundcloud.com/shockwav1"><i class="fa fa-soundcloud"></i> soundcloud</a></div>
-  </div>
-
-    <div class="profile_img"></div>
-
-    <div w3-include-html="footer.html"></div>
-</div>
+</div class ="container">
    
 <!-- projects -->
 
@@ -176,7 +159,7 @@
 
  <div class="titel">
     <h2>projects: under construction</h2>
-    <p> this page is currently under construction.
+     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div> 
     </div>
 
  <div class="projects-list">      
@@ -228,13 +211,13 @@
 <div class ="container" id ="contact-container">
 
  <div class="titel">
-    <h2>contact: under construction</h2>
+    <h2>contact: </h2>
     <p> this page is currently under construction. please come again later!
 </div>
 
 <div w3-include-html="footer.html"></div>
  
-</div>
+</div class="container">
 
 
 </main>
@@ -353,13 +336,6 @@
       document.getElementById('cv-container').style.display = 'block';      
       
     }, false);
-  
-     document.getElementById('about-link').addEventListener('click', function (){  
-      hideAllDivs();  
-      document.title = "about";
-      document.getElementById('about-container').style.display = 'block';      
-     
-    }, false);
 
      document.getElementById('projects-link').addEventListener('click', function (){  
       hideAllDivs(); 
@@ -397,7 +373,6 @@
     function hideAllDivs(){
     document.getElementById('landingpage-container').style.display = 'none';  
     document.getElementById('cv-container').style.display = 'none';
-    document.getElementById('about-container').style.display = 'none';
     document.getElementById('projects-container').style.display = 'none';
     document.getElementById('contact-container').style.display = 'none';
     }
