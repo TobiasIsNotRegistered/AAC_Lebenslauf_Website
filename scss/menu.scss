@@ -257,13 +257,13 @@ $primary-color: #333;
 
 
 .logo {
-  width: calc(20px + 5%);
-  height: calc(20px + 5%);
+  width: calc(100px + 5vw);
+  height: calc(100px + 5vw);
   background-image: url("../images/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
-  padding: 5%;
+  padding: 0;
   background-size: 100%;
   margin: auto;
 

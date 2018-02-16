@@ -36,7 +36,7 @@ body{
   	line-height: 1.5;
 
   	/* for sticky footer */
-  	margin-bottom: 100px;    
+  	margin-bottom: 5vh; 
 }
 
 
@@ -109,7 +109,6 @@ body{
 	
 	position: absolute;
 	bottom: 0;
-	/* height: 100px; */
 	width: 100%;
 
 	background: white;
@@ -222,19 +221,33 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
-#projects-container .date {
+#projects-container .title_1 {
 	font-size: calc(15px + 2vh);	
 	margin-right: 25px;
 	
 }
 
-#projects-container .duration {
+#projects-container .title_2 {
 	font-size: calc(10px + 1vh);
 	font-style: italic;
 	white-space: nowrap;
 }
 
 #projects-container .text {
+	font-size: calc(10px + .5vh);
+	text-align: justify;
+/* used to force linebreak */
+	display: block;
+}
+
+#projects-container .keywords {
+	margin-top: 15px;	
+	margin-bottom: 15px;
+	font-size: calc(10px + .5vh);
+	font-style: italic;
+}
+
+#projects-container .sources {
 	font-size: calc(10px + .5vh);
 	text-align: justify;
 /* used to force linebreak */

@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loader.css">
-
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 
@@ -34,7 +34,8 @@
 <!-- menu -->
   <nav class="menu">
     <div class="menu__brand">
-      <a href="#"><div class="logo" id="logo-link"></div></a></br>
+      <a href="#"><div class="logo" id="logo-link"></div></a>
+
       <div class=info>
         
         Tobias Sigel </br>
@@ -196,60 +197,25 @@
 
       <ul>
         <li>
-             <span class="date">This website</span>  
-             <span class="duration">CV hosted on a Raspberry Pi</span>   
+             <span class="title_1">This website</span>  
+             <span class="title_2">CV hosted on a Raspberry Pi</span>   
              <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and learn everything related to it.</span>
-             <span class="keywords">Keywords: Raspberry Pi, PortForwarding, staticIP's, Html5, CSS3, JS, Php, Responsive Web-Design</span>      
+             <span class="keywords">Keywords: Raspbian/Linux, PortForwarding/staticIP's, Html5, CSS3, JS, PHP, Sass, Responsive Web-Design</span> 
+             <span class="sources"><div class="menu__link"><a href="https://github.com/TobiasIsNotRegistered/tobiasisnotregistered.github.io/tree/loaderScreenAndMore"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></div></span>      
         </li>
         <li>
              <span class="date">GroupHub</span>  
              <span class="duration">Android-App, native</span>   
              <span class="text">IP5-Project for the FHNW.</span>   
         </li>
-        <li>
-             <span class="date">2015 - 2015</span>  
-             <span class="duration">4 months</span>     
-             <span class="text">Alternative service (in lieu of military service) in KSB, Gardening & facility management. Baden, AG</span>    
-        </li>
-         <li>
-             <span class="date">2014 - 2015</span>
-             <span class="duration">8 months</span>
-             <span class="text">Civil engineer at Ingenieurbüro Senn AG, support of civil engineering projects. Nussbaumen, AG</span>          
-        </li>
-        <li>
-             <span class="date">2013 - 2014 </span>
-             <span class="duration">8 months</span> 
-             <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
-        </li>
-        <li>
-             <span class="date">2010 - 2013 </span>
-             <span class="duration">3 years</span> 
-             <span class="text">Technical vocational baccalaurate diploma, Berufsschule Lenzburg. Lenzburg, AG</span>      
-        </li>
-        <li>
-             <span class="date">2009 - 2013 </span>
-             <span class="duration">4 years</span>
-             <span class="text">Apprenticeship civil engineering, Porta AG. Brugg, AG / Interlaken, BE</span>       
-        </li>
-        <li>
-             <span class="date">2006 - 2009</span>
-             <span class="duration">3 years</span>
-             <span class="text">Bezirksschule Klingnau. Klingnau, AG</span>        
-        </li>
-        <li>
-             <span class="date">2000 - 2006</span> 
-             <span class="duration">6 years</span> 
-             <span class="text">elementary school. Zürich ZH</span>      
-        </li>
+       
+        
       </ul>
    </div>
 
-<div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
-    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-  </div class="footer">
-</div>
-</div>
+<div w3-include-html="footer.html"></div>
+<script>w3.includeHTML();</script>
+</div class="container">
 
 <!-- contacts -->
 
