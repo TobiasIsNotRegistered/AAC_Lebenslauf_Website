@@ -218,10 +218,7 @@
            </span> 
              
              
-        </li>
-        
-       
-        
+        </li>       
       </ul>
    </div>
 
@@ -236,11 +233,12 @@
  <div class="titel">
     <h2>contact: under construction</h2>
     <p> this page is currently under construction. please come again later!
-    </div>
+</div>
 
 <div w3-include-html="footer.html"></div>
-  </div>
+ 
 </div>
+
 
 </main>
 </body>
