@@ -247,7 +247,7 @@
 
 
 <!-- *************************** JS: Include Footer************************** -->
-<script>w3.includeHTML();</script>
+
 <!-- *************************** JS: MENU************************************ -->
 <script type="text/javascript">
 (function() {
@@ -396,6 +396,7 @@
     document.getElementById("loader").style.display = "none";
     document.getElementById("landingpage-container").style.display = "block";
     document.getElementById('headerID').style.display = 'block';
+    w3.includeHTML();
     }
 
     function hideAllDivs(){
