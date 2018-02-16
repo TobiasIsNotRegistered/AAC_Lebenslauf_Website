@@ -113,6 +113,7 @@ body{
 	bottom: 0;
 	width: 100%;
 
+    font-size: font-size: calc(15px + .2vw);
 	background: white;
 	
 	padding: 0; 
@@ -273,6 +274,7 @@ width: 200px;
 /* ****************** SHAKEABLE CONTENT ***************** */
 
 .shake {
+  
   animation: shake 3.0s cubic-bezier(0.23, 1, 1.0, 1) both;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
