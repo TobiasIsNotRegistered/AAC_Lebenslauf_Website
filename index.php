@@ -163,16 +163,13 @@
     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
    <div class="menu__link"><a href="https://facebook.com/TobiasSigel"><i class="fa fa-facebook-square"></i> facebook</a></div>
    <div class="menu__link"><a href="https://soundcloud.com/shockwav1"><i class="fa fa-soundcloud"></i> soundcloud</a></div>
-    </div>
+  </div>
 
     <div class="profile_img"></div>
+
+    <div w3-include-html="footer.html"></div>
 </div>
    
-
-<div w3-include-html="footer.html"></div>
-</div>
-</div>
-
 <!-- projects -->
 
 <div class ="container" id ="projects-container">
