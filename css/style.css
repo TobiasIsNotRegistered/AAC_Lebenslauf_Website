@@ -90,6 +90,8 @@ body{
 }
 
 .info {
+	padding-top: 50px;
+	padding-bottom: 50px;
 	font-size: calc(15px + .5vh);
 	color:black;
 }
@@ -199,26 +201,24 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 
 .projects-list ul{
 	list-style-type: none; 
-	 display: flex;
-	 flex-wrap: wrap;
 	 
-	 flex-direction: row;
-	 justify-content: space-between;
 	}
 
 .projects-list ul li{
-	
-	flex-grow: 1; /* default 0 */
-	flex-basis: calc(15vw + 15vh);
-	
+		
 	padding: calc(5px + 1vh + 1vw);
 	margin: calc(1vw + 1vh);
 
 	background: white;
 
--webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
--moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+}
+
+.projects-list ul li img{
+		
+	max-width: 400px;
 }
 
 #projects-container .title_1 {

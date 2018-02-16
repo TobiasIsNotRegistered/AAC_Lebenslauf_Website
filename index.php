@@ -35,14 +35,13 @@
   <nav class="menu">
     <div class="menu__brand">
       <a href="#"><div class="logo" id="logo-link"></div></a>
+      
+      <div class=info>  
 
-      <div class=info>
-        
-        Tobias Sigel </br>
-        Aargau, Switzerland </br>
-        <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div></br>
-       
+        Tobias Sigel
+        </br> <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
       </div>
+      
     </div>
     <ul class="menu__list">
       <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-facebook-square">  </i> Welcome</a></li>
@@ -50,10 +49,6 @@
       <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>
       <li class="menu__item" id="about-link">    <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> About me</a></li>      
       <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Contact</a></li>
-      <!-- 
-      <li class="menu__item"><a href="https://facebook.com/TobiasSigel" target="_blank" class="menu__link menu__link--social"><i class="fa fa-facebook-square"></i>facebook</a></li>
-      <li class="menu__item"><a href="https://soundcloud.com/shockwav1" target="_blank" class="menu__link menu__link--social"><i class="fa fa-soundcloud"></i>soundcloud</a></li>
-    -->
      
     </ul>
   </nav>  
@@ -92,10 +87,7 @@
 </div class="titel"> 
 
 
-  <div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
-    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-  </div class="footer">
+ <div w3-include-html="footer.html"></div>
     
 </div class="container">
 
@@ -159,10 +151,7 @@
       </ul>
    </div>
 
-<div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
-    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-  </div class="footer">
+<div w3-include-html="footer.html"></div>
 </div>
 
 <!-- about -->
@@ -171,16 +160,16 @@
 
  <div class="titel">
     <h2>about: under construction</h2>
-    <p> this page is currently under construction. 
+    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
+   <div class="menu__link"><a href="https://facebook.com/TobiasSigel"><i class="fa fa-facebook-square"></i> facebook</a></div>
+   <div class="menu__link"><a href="https://soundcloud.com/shockwav1"><i class="fa fa-soundcloud"></i> soundcloud</a></div>
     </div>
 
-    Test
     <div class="profile_img"></div>
+</div>
+   
 
-<div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
-    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-  </div class="footer">
+<div w3-include-html="footer.html"></div>
 </div>
 </div>
 
@@ -199,22 +188,45 @@
         <li>
              <span class="title_1">This website</span>  
              <span class="title_2">CV hosted on a Raspberry Pi</span>   
-             <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and learn everything related to it.</span>
+             <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and learn everything related to it. The case was 3D-printed at FHNW-Windisch, the blueprints are from thingyverse.com </span>
              <span class="keywords">Keywords: Raspbian/Linux, PortForwarding/staticIP's, Html5, CSS3, JS, PHP, Sass, Responsive Web-Design</span> 
              <span class="sources"><div class="menu__link"><a href="https://github.com/TobiasIsNotRegistered/tobiasisnotregistered.github.io/tree/loaderScreenAndMore"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></div></span>      
+             <a href="https://imgur.com/nFBbZch"><img src="https://i.imgur.com/nFBbZch.jpg" title="source: imgur.com" width="100%" /></a>
+             <a href="https://imgur.com/Zfc4Tm0"><img src="https://i.imgur.com/Zfc4Tm0.jpg" title="source: imgur.com" width="100%" /></a> 
         </li>
+
         <li>
-             <span class="date">GroupHub</span>  
-             <span class="duration">Android-App, native</span>   
-             <span class="text">IP5-Project for the FHNW.</span>   
+            <span class="title_1">GroupHub</span>  
+             <span class="title_2">IP5, FHNW Windisch</span>   
+             <span class="text">The scope of the project was to design and implement a showcase for OpenDolphin, a framework which utilizes best practices from MVC, MVVM, Command- and other well-known design-patterns. OpenDolphin is being developed by Canoo Engineering AG. After learning how to work with the framework during the initial phase, we decided to alter the project's specifications and implement multiple clients during the course of that semester. The final output included a server application, an android application as well as barebones JS and JavaFX clients. </span>
+             <span class="keywords">Keywords:  OpenDolphin, JavaScript, Java, JavaFX, Android </span> 
+             <span class="sources"><a href="http://www.canoo.com" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Canoo Engineering</a></span> 
+             
+             <a href="https://imgur.com/mCU0Htj"><img src="https://i.imgur.com/mCU0Htj.jpg" title="source: imgur.com" width="100%"/></a>
+             <a href="https://imgur.com/CfU2vHY"><img src="https://i.imgur.com/CfU2vHY.jpg" title="source: imgur.com" width="100%" /></a>
         </li>
+
+        <li>
+            <span class="title_1">SVIN</span>  
+             <span class="title_2">IP3, FHNW Windisch</span>   
+             <span class="text">A website made for SVIN ("Schweizerische Vereinigung der Ingenieurinnen"). SVIN's goal regarding this project was to promote MINT-professions for female students. The proposed solution on which we settled was to deliver a website which involved the following features: Info- & landing page, (Sv)infographics, timelime about past & future events, a space to read biographies of famous female engineers, a member-area for networking and finally, the site should be available in french as well as in german. After evaluating the requirements our team decided to use WordPress, as it was well documented and widely used. In the first semester of this project, my role was the one of the requirement-engineer. I had to make sure that all requirements were well documented and that there were no misconceptions between the development team (us) and the customer, as they usually generate a lot of useless information and can cost a lot of time. The second semester was more flexible in terms of roles; altough I was assigned the role of information-manager, we often switched tasks or reassigned them as it made sense. </span>
+             <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
+             <span class="sources">
+            <a href="http://www.svin.ch/cms/nc/de/home.html" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (official - not by us)</a>
+              </br>
+             <a href="https://svin25.ch/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (our page)</a>
+           </span> 
+             
+             
+        </li>
+        
        
         
       </ul>
    </div>
 
 <div w3-include-html="footer.html"></div>
-<script>w3.includeHTML();</script>
+
 </div class="container">
 
 <!-- contacts -->
@@ -226,19 +238,17 @@
     <p> this page is currently under construction. please come again later!
     </div>
 
-<div class="footer">
-    <p><i class="fa fa-copyright" aria-hidden="true"></i> Tobias Sigel, inspired by: </p>
-    <div class="menu__link"><p><a href="https://codepen.io/ettrics/pen/JoaaxW"><span class="shake">Ettrics' Full-Screen Menu Overlay @ codepen.io</span></a></p></div>
-  </div class="footer">
-</div>
+<div w3-include-html="footer.html"></div>
+  </div>
 </div>
 
 </main>
 </body>
 
 
+<!-- *************************** JS: Include Footer************************** -->
+<script>w3.includeHTML();</script>
 <!-- *************************** JS: MENU************************************ -->
-
 <script type="text/javascript">
 (function() {
   
