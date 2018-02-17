@@ -198,9 +198,6 @@ h1, h2, h3, p {
 main {
   display: flex;
   flex-flow: column wrap;
-  /*
-  justify-content: center;
-  */
   padding: 0vw;
   padding-top: 00vh;
   padding-bottom: 0vh; }

@@ -1,0 +1,148 @@
+import ddf.minim.analysis.*;
+import ddf.minim.*;
+
+Minim       minim;
+AudioPlayer audioplayer;
+AudioInput lineIn;
+FFT         fft;
+BeatDetect  beat;
+int         multiplier1, multiplier2, multiplier3; //multipliers to increase amplitude
+
+//split frequencies for detection
+ float specLow;
+ float specMid;
+ float specHigh;
+ int hz;
+ 
+ float xfactorMax; //multiplier for scaling x 
+ float logScaling;
+ float scaleFactor;
+
+void setup()
+{
+  //fullScreen();
+  size(720, 480);
+  surface.setResizable(true); //works
+  smooth(); //anti-aliasing  
+  frameRate(60);
+  
+  minim = new Minim(this);
+  audioplayer = minim.loadFile("jingle2.wav", 1024); //buffersize
+  lineIn = minim.getLineIn(Minim.STEREO, 512);
+  beat = new BeatDetect();  
+  
+  // loop the file indefinitely
+  audioplayer.loop();
+  fft = new FFT(audioplayer.bufferSize(), audioplayer.sampleRate() );
+  
+  //low-effort-logarithmic-scale
+  specLow = 0.05; //fraction of bands below 0.05 are considered low frequencies
+  specMid = 0.20; //0.05-0.20 is mid
+  specHigh= 1.00; //rest is highs (mostly)
+   
+  //the fraction of the band taking a specific frequency divides the screenwidth which results in a multiplier factor for the x-axis
+   xfactorMax =  width*11 / fft.specSize();
+   
+   logScaling = 1.0;
+   scaleFactor = 0.99;
+   
+   textSize(60);
+   text("Click to Skip 1s ", width/3+100, height/3*2);
+   textSize(20);
+   text("Bass", (width/3*2), height/2-50);
+   text("Mids", (width/3*2), height/3-50);
+   text("Highs", (width/3*2), height/6-50);
+}
+
+void draw()
+{
+  
+  if(mousePressed){
+   audioplayer.skip(1000); 
+  }
+  
+  fft.forward( audioplayer.mix ); //alternatively use lineIn.mix for microfone
+  beat.detect( audioplayer.mix );
+  logScaling = 1.0;
+  multiplier1 = 10;
+  xfactorMax =  width*10 / fft.specSize(); //resizing purposes
+
+  fill(#1A1F18, 10);
+  rect(0, 0, width, height);  
+  noFill();   
+    
+  translate(0, height/2);  
+  translate(width/3, 0); 
+  translate(width/3, 0);
+   
+  pushMatrix();
+  
+  //highs text
+   for(int i = (int)(fft.specSize()*specMid); i < (int)(fft.specSize()*specHigh); i++)
+  {    
+    stroke(210,210,250);    
+    rotate(fft.getBand(i)); 
+    line(i,0,i,fft.getBand(i)*10); //the longer the lines, the louder the highs
+    
+    if(fft.getBand(i) > 8){
+      fill(210,210,250);
+      hz=i*44100/1024;
+     // text(hz + "hz", 0, (hz/25)+100); //the nearer the teext to the center, the lower the freq
+      text(hz + "hz", 0, height/2-50); 
+    
+    }
+  }
+  
+  //mid text
+  for(int i = (int)(fft.specSize()*specLow); i < (int)(fft.specSize()*specMid); i++)
+  {
+    stroke(120,120,200);    
+    rotate(fft.getBand(i));
+    line(i,0,i,fft.getBand(i)*6); // the longer the lines, the louder the mids
+    
+    if(fft.getBand(i) > 20){
+      fill(120,120,200);
+      hz=i*44100/1024;
+      text(hz + "hz", 0, 300); 
+    }
+  }
+  
+  //bass-Text
+  for(int i = 0; i < (int)(fft.specSize()*specLow); i++)
+  {
+    stroke(80,80,200);
+    rotate(fft.getBand(i)/1000);
+    strokeWeight(fft.getBand(i)/50);
+    //line(i,0,i,fft.getBand(i));
+    noFill();
+    ellipse(0,0,fft.getBand(i), fft.getBand(i)); //the bigger the ellipse, the louder the bass
+        
+    if(fft.getBand(i) > 100){ 
+      fill(80,80,200);
+      hz=i*44100/1024;
+      text(hz + "hz", 0, 50); 
+    }
+  }
+  
+  popMatrix(); 
+  translate(-width/4*3, 0);  
+  
+  //all frequencies
+  
+  for(int i = 0; i < (int)(fft.specSize()); i++)
+  {
+    stroke(210,210,250, 50-i);   
+    if(beat.isOnset()){stroke(210,210,250, 100-i);xfactorMax=100;};
+    line((i*xfactorMax*logScaling),0, i*xfactorMax*logScaling, fft.getBand(i)*multiplier1); 
+    line((i*xfactorMax*logScaling),fft.getBand(i)*multiplier1, (i+1)*xfactorMax*(logScaling*scaleFactor), 0); 
+    //line((i*xfactorMax),fft.getBand(i)*multiplier1, (i+1)*xfactorMax, fft.getBand(i+1) * multiplier1); 
+    
+    strokeWeight(1);
+    line((i*xfactorMax*logScaling),0, i*xfactorMax*logScaling, -fft.getBand(i)*multiplier1); 
+    line((i*xfactorMax*logScaling),-fft.getBand(i)*multiplier1, (i+1)*xfactorMax*(logScaling*scaleFactor), 0); 
+    strokeWeight(1);  
+    
+    logScaling *= scaleFactor;    
+  }
+  
+}

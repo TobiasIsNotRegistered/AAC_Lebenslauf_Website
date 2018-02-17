@@ -168,36 +168,65 @@
         <li>
              <span class="title_1">This website</span>  
              <span class="title_2">CV hosted on a Raspberry Pi</span>   
-             <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and learn everything related to it. The case was 3D-printed at FHNW-Windisch, the blueprints are from thingyverse.com </span>
-             <span class="keywords">Keywords: Raspbian/Linux, PortForwarding/staticIP's, Html5, CSS3, JS, PHP, Sass, Responsive Web-Design</span> 
-             <span class="sources"><div class="menu__link"><a href="https://github.com/TobiasIsNotRegistered/tobiasisnotregistered.github.io/tree/loaderScreenAndMore"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></div></span>      
+             <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and to learn everything related to it. The case was 3D-printed at FHNW-Windisch, the blueprints are from thingyverse.com. After setting up the Pi and getting some inspiration from codepen.io, I was eager to present my family & friends what I've worked for the past few days. That's why I decided to use the noIP - service to redirect some arbitrary, free adress (tobiassigel.redirectme.net) to our LAN. The raspberry actually informs noIP every 10 minutes about our WAN-adress, so I don't have to do this manually. Luckily I was also able to set my Raspberry's local IP through the router, which ensures that Port-Forwarding works. One challenge of this project was to constantly remind myself that I was using SASS (Syntactically Awesome Style Sheets) and had to activate it in order to see changes. A goal of mine was to keep everything super responsive; for mobiles, tablets as well as desktop's, but the different browsers supporting different technologies made this a bigger challenge than I've imagined it to be.</span>
+             <span class="keywords">Keywords: Raspbian / Linux, PortForwarding / staticIP's, Html5, CSS3, JS, PHP, Sass, Responsive Web-Design</span> 
+             <span class="sources"><div class="menu__link"><a href="https://github.com/TobiasIsNotRegistered/tobiasisnotregistered.github.io/tree/loaderScreenAndMore"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></div></span> 
+             <div class="images">     
              <a href="https://imgur.com/nFBbZch"><img src="https://i.imgur.com/nFBbZch.jpg" title="source: imgur.com" width="100%" /></a>
              <a href="https://imgur.com/Zfc4Tm0"><img src="https://i.imgur.com/Zfc4Tm0.jpg" title="source: imgur.com" width="100%" /></a> 
+           </div>
         </li>
 
         <li>
             <span class="title_1">GroupHub</span>  
              <span class="title_2">IP5, FHNW Windisch</span>   
-             <span class="text">The scope of the project was to design and implement a showcase for OpenDolphin, a framework which utilizes best practices from MVC, MVVM, Command- and other well-known design-patterns. OpenDolphin is being developed by Canoo Engineering AG. After learning how to work with the framework during the initial phase, we decided to alter the project's specifications and implement multiple clients during the course of that semester. The final output included a server application, an android application as well as barebones JS and JavaFX clients. </span>
+             <span class="text">The scope of the project was to design and implement a showcase for OpenDolphin, a framework which utilizes best practices from MVC, MVVM and other, well-known design-patterns. OpenDolphin is being developed by Canoo Engineering AG. After learning how to work with the framework during the initial phase, we decided to alter the project's specifications and implement multiple clients during the course of that semester. The final output included a server application, an android application as well as barebones JS and JavaFX clients. OpenDolphin makes heavy use of PresentationModels, a glass-pane layer put over the actual dataset in order to be able to present it easily. Every client has a ClientModelStore which stores the currently used Models, while the Server keeps them up-to-date by altering its own, corresponding PresentationModels. The only possibility to communicate with the server outside of PresentationModels was to issue commands, which means that the only way to send data from a client to server was via PresentationModels. The resulting effect is, that every entity; be it an object or a relation, had to be implemented as PresentationModels.  </span>
              <span class="keywords">Keywords:  OpenDolphin, JavaScript, Java, JavaFX, Android </span> 
-             <span class="sources"><a href="http://www.canoo.com" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Canoo Engineering</a></span> 
-             
+             <span class="sources"><a href="http://www.canoo.com" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Canoo Engineering</a>
+              <a href="https://github.com/TobiasIsNotRegistered/GroupHubPublic" class = "menu__link"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></span> 
+              <div class="images"> 
              <a href="https://imgur.com/mCU0Htj"><img src="https://i.imgur.com/mCU0Htj.jpg" title="source: imgur.com" width="100%"/></a>
              <a href="https://imgur.com/CfU2vHY"><img src="https://i.imgur.com/CfU2vHY.jpg" title="source: imgur.com" width="100%" /></a>
+           </div>
         </li>
 
         <li>
             <span class="title_1">SVIN</span>  
              <span class="title_2">IP3, FHNW Windisch</span>   
-             <span class="text">A website made for SVIN ("Schweizerische Vereinigung der Ingenieurinnen"). SVIN's goal regarding this project was to promote MINT-professions for female students. The proposed solution on which we settled was to deliver a website which involved the following features: Info- & landing page, (Sv)infographics, timelime about past & future events, a space to read biographies of famous female engineers, a member-area for networking and finally, the site should be available in french as well as in german. After evaluating the requirements our team decided to use WordPress, as it was well documented and widely used. In the first semester of this project, my role was the one of the requirement-engineer. I had to make sure that all requirements were well documented and that there were no misconceptions between the development team (us) and the customer, as they usually generate a lot of useless information and can cost a lot of time. The second semester was more flexible in terms of roles; altough I was assigned the role of information-manager, we often switched tasks or reassigned them as it made sense. </span>
+             <span class="text">A website made for SVIN ("Schweizerische Vereinigung der Ingenieurinnen"). SVIN's goal was to promote MINT-professions for female students. The proposed solution on which we settled was to deliver a website which involved the following core-features: 
+              <div class="projects-inside-list" id="projects-inside-list-svin">
+              <ul>
+                <li>1. Info- & landing page to inform about SVIN and its 25th anniversary</li>
+                <li>2. Svinfographics: statistical overviews</li>
+                <li>3. Timelime about past- & future events</li>
+                <li>4. Biographies: a space to upload and maintain biographies of famous female engineers</li>
+                <li>5. Member-Area: enables networking by offering a feature which matches members based on their profile-attributes (tag based)</li>
+                <li>6. Multilingual: french/german translations</li>
+              </ul>
+            </div class="projects-inside-list">
+            After evaluating the requirements our team decided to use WordPress, as it was well documented and widely used. In the first semester of this project, my role was the one of the requirement-engineer. I had to make sure that all requirements were well documented and that there were no misconceptions between the development team (us) and the customer, as they usually generate a lot of useless information and can cost a lot of time. The second semester was more flexible in terms of roles; altough I was assigned the role of information-manager, we often switched tasks or reassigned them as it made sense. </span>
              <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
              <span class="sources">
             <a href="http://www.svin.ch/cms/nc/de/home.html" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (official - not by us)</a>
               </br>
              <a href="https://svin25.ch/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (our page)</a>
-           </span> 
-             
-             
+           </span>         
+        </li> 
+
+         <li>
+            <span class="title_1">Audio-Visualisation</span>  
+             <span class="title_2">Module "Media Computing"</span>   
+             <span class="text">A fun, voluntary project I made while learning for the module "Media Computing". We extracted the magnitude and frequency of the incoming signal (microphone or an existing song) using fft (fast-fourier transformation). I splitted the frequencies into three bands: low, mid & high. Frequencies are usually distributed in a logarithmic manner, which is why I only considered the lowest 5% of the frequencies to be low frequencies. After playing around with simply drawing the magnitude of the signal at the right frequency, I started experimenting with some methods the processing library offered, such as pushMatrix- & popMatrix. This enabled me to rotate the drawing according to the amplitude of the corresponding frequency (louder music results in faster rotation). Each drawn line, sometimes perceived as dots or smirks (because the song is very fast, for example), actually represents one certain frequency. Because I wanted to represent this fact even more, I implemented a text-feature which only displays the frequency of a signal if it goes over a hardcoded treshold. A really simple beat-detection algorithm, if you will. With this in mind, I tried to find the right values for the tresholds to correctly display the names of the kickdrum, hihats and snares as they were playing. This didn't work out well enough, as in today's music-production, every song is heavily compressed and signals can get obscurred by others, which is why I resorted in displaying the plain old frequency in hz.</span>
+             <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
+             <span class="sources">
+              <a href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>Download Processing</a>              
+              <a href="http://code.compartmental.net/tools/minim/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>Minim (Processing Sound Library)</a>
+              <div class="menu__link"><a href="documents\analyze_sound.txt" download><i class="fa fa-download" aria-hidden="true"></i>download source code</a></div>
+              </br></span>
+               <div class="images">  
+           <a href="https://imgur.com/JNcG387"><img src="https://i.imgur.com/JNcG387.png" title="source: imgur.com" width="100%"/></a>
+           <a href="https://imgur.com/CSK7zkc"><img src="https://i.imgur.com/CSK7zkc.png" title="source: imgur.com" width="100%"/></a>             
+             </div>
         </li>       
       </ul>
    </div>

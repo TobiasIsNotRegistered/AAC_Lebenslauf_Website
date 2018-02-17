@@ -28,7 +28,6 @@ html {
 }
 
 body{
-  	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0,0,0, 0.0)), url("../images/clouds.jpg"); 
   	background:  linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/patterns/ignasi_pattern_s.png');
 
   	background-repeat: repeat;
@@ -174,7 +173,7 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 
 #cv-container .date {
 	font-size: calc(15px + 2vh);	
-	margin-right: 25px;
+	margin-right: 5px;
 	
 }
 
@@ -201,11 +200,10 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
 .projects-list ul{
-	list-style-type: none; 
-	 
+	list-style-type: none; 	 
 	}
 
-.projects-list ul li{
+.projects-list ul > li{
 		
 	padding: calc(5px + 1vh + 1vw);
 	margin: calc(1vw + 1vh);
@@ -222,9 +220,58 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	max-width: 400px;
 }
 
+.projects-inside-list ul{
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	overflow-x: auto;
+	background: 
+	-webkit-justify-content: flex-start; /* Safari */
+    justify-content:         flex-start;
+
+    -webkit-align-items: flex-start; /* Safari */
+    align-items:         flex-start;
+
+    -webkit-align-content: stretch; /* Safari */
+    align-content:         stretch;
+
+	background:  linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/patterns/ignasi_pattern_s.png');
+  	background-repeat: repeat;
+  	border-radius: 10px;
+
+
+  	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+}
+
+.projects-inside-list ul li{
+   flex-grow: 0; /* default 0 */
+}
+
+@media screen and (max-width: 768px){
+	.projects-inside-list ul li{
+   flex-grow: 1; /* default 0 */
+}
+}
+
+#projects-inside-list-svin > ul{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+	max-height: 50vh;
+}
+
+#projects-inside-list-svin > ul > li{
+	margin: 1%;
+	padding: 5px;	
+	border-radius: 5px;
+}
+
 #projects-container .title_1 {
 	font-size: calc(15px + 2vh);	
-	margin-right: 25px;
+	margin-right: 5px;
 	
 }
 
@@ -253,6 +300,10 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	text-align: justify;
 /* used to force linebreak */
 	display: block;
+}
+
+#projects-container .images {
+	padding-top: 15px;
 }
 
 /* ****************** ABOUT ***************************** */
