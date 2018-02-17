@@ -302,6 +302,11 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	display: block;
 }
 
+#projects-container .sources a{
+	margin-right: 15px;
+}
+
+
 #projects-container .images {
 	padding-top: 15px;
 }
