@@ -503,7 +503,7 @@ function copyToClipboard(element) {
   $temp.val($(element).text()).select();
   document.execCommand("copy");
   $temp.remove();
-  replaceContentInContainer("copied to clipboard");
+  replaceContentInContainer("copied to clipboard!");
 }
 </script>
 
