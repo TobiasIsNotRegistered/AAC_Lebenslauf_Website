@@ -62,7 +62,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  visibility: visible;
+  visibility: hidden;
   text-align: center; }
   .menu--active {
     visibility: visible;
