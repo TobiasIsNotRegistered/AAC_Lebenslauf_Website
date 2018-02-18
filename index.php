@@ -49,7 +49,7 @@
       
       <div class=info>  
 
-        Tobias Sigel
+        <b>Tobias Sigel</b>
         </br> <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
       </div>
       
