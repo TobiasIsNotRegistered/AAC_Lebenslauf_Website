@@ -120,6 +120,7 @@
     font-weight: 300;
     color: black;
     text-decoration: none;
+    cursor: pointer;
     -webkit-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -moz-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     -o-transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);

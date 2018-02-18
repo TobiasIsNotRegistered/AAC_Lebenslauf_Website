@@ -37,6 +37,10 @@ body{
   	margin-bottom: 10vh; 
 }
 
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+}
+
 /* **************** LOADER ************** */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
@@ -285,7 +289,7 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
 #projects-inside-list-svin > ul > li{
-	margin: 1%;
+	margin: 5px;
 	padding: 5px;	
 	border-radius: 0px;
 

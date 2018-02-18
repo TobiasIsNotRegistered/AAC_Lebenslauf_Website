@@ -139,7 +139,7 @@
              <span class="date">2013 - 2014 </span>
              <span class="duration">8 months</span> 
              <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>
-             <span class="sources"><div class="menu__link"><a href="Zeugnisse\Arbeitszeugnis stage-on-air.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference (german)</a></div></span>        
+             <span class="sources"><div class="menu__link"><a href="Zeugnisse\Arbeitszeugnis stage-on-air.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference</a></div></span>        
         </li>
         <li>
              <span class="date">2010 - 2013 </span>
@@ -152,7 +152,7 @@
              <span class="date">2009 - 2013 </span>
              <span class="duration">4 years</span>
              <span class="text">Apprenticeship civil engineering, Porta AG. Brugg, AG / Interlaken, BE</span>       
-             <span class="sources"><div class="menu__link"><a href="Zeugnisse\AZ_porta_merged.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference (german)</a></div>
+             <span class="sources"><div class="menu__link"><a href="Zeugnisse\AZ_porta_merged.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference</a></div>
               <div class="menu__link"><a href="Zeugnisse\Fähigkeitsausweis.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download certificate</a></div></span>   
         </li>
         <li>
@@ -300,8 +300,10 @@
   <ul>
     <li>
             <span class="date">About</span>  
-            <span class="duration">Tobias Sigel</span>   
-            <span class="text">I'm an IT-student @FHNW-Windisch, studying the course "iCompetence". My skillset and personal interests revolves around management, design and usability. In my freetime you'll find me producing music, exercising, hanging out with friends, gaming, or working on a project like this.</span> 
+            <span class="duration">this guy</span>   
+            <span class="text">
+            <img src="images/about.jpg" title="Tobias sigel" width="100%" />
+          I'm an IT-student @FHNW-Windisch, studying the course "iCompetence". My skillset and personal interests revolves around management, design and usability. In my freetime you'll find me producing music, exercising, hanging out with friends, gaming, or working on a project like this.</span> 
     </li>
      <li>
      <span class="date">Music</span>  
@@ -320,9 +322,10 @@
                   <li>
                   <a class = "menu__link target="_blank" href="https://www.xing.com/profile/Tobias_Sigel2/cv"><i class="fa fa-xing"></i> Xing</a></li>
                   <li>
-                  <a class="menu__link" href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> Mail me!</a> 
+                  <a class="menu__link" href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> Mail me!</a> </li>
                   <li>
-                    <a class="menu__link"><i class="fa fa-phone"></i> 076 437 85 15</a></li> 
+                    <a class="menu__link"><div id="contentToCopy" onclick="copyToClipboard('#contentToCopy')"><i class="fa fa-phone"></i> 076 437 85 15 <i class="fa fa-copy" title="click to copy"></i></div></a>
+                  </li> 
               </ul>
              </span> 
         </li>  
@@ -491,6 +494,27 @@
 
 };
 </script>
+
+<!--- * *********************** JS: Copy content to clipboard ************** -->
+<script type="text/javascript">
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  replaceContentInContainer("copied to clipboard");
+}
+</script>
+
+<script type="text/javascript"><!--
+function replaceContentInContainer(content) {
+var container = document.getElementById('contentToCopy');
+container.innerHTML = content;
+}
+</script>
+
+
 
 
 
