@@ -110,9 +110,7 @@ body{
 }
 
 .menu .theOnlyBoldThing{
-	 font-weight: 400 !important;
 	 font-size: calc(20px + .5vh);
-	 font-style: italic;
 }
 
 /* ****************** LANDING PAGE ************************* */
