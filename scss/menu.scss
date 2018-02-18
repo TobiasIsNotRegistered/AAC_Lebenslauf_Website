@@ -172,6 +172,7 @@ $primary-color: #333;
   }
   
   &__link {
+    text-align: left;
     display: inline-block;
     position: relative;
     font-size: calc(15px + .6vw + .6vh);

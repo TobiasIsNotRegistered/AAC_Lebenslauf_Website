@@ -112,6 +112,7 @@
     transition: all 800ms cubic-bezier(0.46, 0.53, 0.3, 0.64);
     /* custom */ }
   .menu__link {
+    text-align: left;
     display: inline-block;
     position: relative;
     font-size: calc(15px + .6vw + .6vh);

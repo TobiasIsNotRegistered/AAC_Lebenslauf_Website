@@ -13,7 +13,7 @@
 
 html {
     position: relative;
-    
+    word-wrap:break-word;
 }
 
 * {
@@ -229,7 +229,6 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 .projects-list ul li img{
 		
 	max-width: 250px;
-	max-height: 250px;
 	height: auto;
 }
 
@@ -239,27 +238,24 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	flex-wrap: wrap;
 	flex-direction: row;
 	overflow-x: auto;
-	background: 
-	-webkit-justify-content: flex-start; /* Safari */
-    justify-content:         flex-start;
+	background: url('../images/patterns/ignasi_pattern_s.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
 
+	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+
+	
     -webkit-align-items: flex-start; /* Safari */
     align-items:         flex-start;
 
-    -webkit-align-content: stretch; /* Safari */
-    align-content:         stretch;
-
-	background:  linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/patterns/ignasi_pattern_s.png');
-  	background-repeat: repeat;
-  	border-radius: 10px;
-
-  	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
-	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+    -webkit-align-content: flex-start; /* Safari */
+    align-content:         flex-start;
 }
 
 .projects-inside-list ul li{
-   flex-grow: 0; /* default 0 */
+   flex-grow: 1; /* default 0 */
 }
 
 @media screen and (max-width: 768px){
@@ -272,13 +268,14 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	margin-top: 15px;
 	margin-bottom: 15px;
 	padding: 5px;
-	max-height: 50vh;
+	max-height: 20vh;
 }
 
 #projects-inside-list-svin > ul > li{
 	margin: 1%;
 	padding: 5px;	
-	border-radius: 5px;
+	border-radius: 0px;
+
 }
 
 #projects-container .title_1 {
@@ -290,7 +287,7 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 #projects-container .title_2 {
 	font-size: calc(10px + 1vh);
 	font-style: italic;
-	white-space: nowrap;
+	white-space: wrap;
 }
 
 #projects-container .text {
