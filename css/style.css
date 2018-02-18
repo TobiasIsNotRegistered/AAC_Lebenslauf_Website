@@ -109,6 +109,10 @@ body{
 	color:black;
 }
 
+.menu .theOnlyBoldThing{
+	 font-weight: 500 !important;
+}
+
 /* ****************** LANDING PAGE ************************* */
 
 #landingpage-container{
@@ -180,6 +184,12 @@ body{
 -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+}
+
+.content-list ul li img {
+	padding: 5%;
+	width: 90%;
+	overflow: hidden;
 }
 
 

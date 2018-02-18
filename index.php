@@ -49,16 +49,16 @@
       
       <div class=info>  
 
-        <b>Tobias Sigel</b>
-        </br> <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
+        <div class="theOnlyBoldThing">Tobias Sigel</div>
+        <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>
       </div>
       
     </div>
     <ul class="menu__list">
-      <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-facebook-square">  </i> Welcome</a></li>
-      <li class="menu__item" id="cv-link">       <a href="#" class="menu__link"><i class="fa fa-info-circle">      </i> Curriculum Vitae</a></li>
-      <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>   
-      <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> About / Contact</a></li>
+      <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-wikipedia-w"></i></i>elcome</a></li>
+      <li class="menu__item" id="cv-link">       <a href="#" class="menu__link"><i class="fa fa-contao"></i></i>urriculum Vitae</a></li>
+      <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt"></i>rojects</a></li>   
+      <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-info-circle"></i> About / Contact</a></li>
      
     </ul>
   </nav>  
@@ -302,7 +302,7 @@
             <span class="date">About</span>  
             <span class="duration">this guy</span>   
             <span class="text">
-            <img src="images/about.jpg" title="Tobias sigel" width="100%" />
+            <img src="images/about.jpg" title="Tobias Sigel" />
           I'm an IT-student @FHNW-Windisch, studying the course "iCompetence". My skillset and personal interests revolves around management, design and usability. In my freetime you'll find me producing music, exercising, hanging out with friends, gaming, or working on a project like this.</span> 
     </li>
      <li>
