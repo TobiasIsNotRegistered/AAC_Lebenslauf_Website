@@ -9,18 +9,29 @@
 
 <title>Tobias Sigel</title>
 
-<link rel="stylesheet" type="text/css" href="css/menu.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/loader.css">
 <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script>
+  $(window).load(function() {
+    $(".se-pre-con").fadeOut("slow");;
+  });
+
+</script>
+
 </head>
 
 
 <body>
-
+<div class="se-pre-con"></div>
 <!-- used for loader -->
-<div id="loader"></div>
+<!-- <div id="loader"></div> -->
 
 <header class="header" id="headerID">
  <div class="burger">   
@@ -96,16 +107,18 @@
     
     <div class="titel">
     <h2>Curriculum vitae</h2>
+    <p></p>
     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  |   <div class="menu__link"><a href="documents\CV_TobiasSigel_de.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download CV</a></div>
+
     </div>
    
-   <div class="cv-list">      
+   <div class="content-list">      
     
       <ul>
         <li>
              <span class="date">since 2017</span>  
              <span class="duration">until now</span>   
-             <span class="text">database evaluation & optimization at DynaEngineering AG. Windisch, AG</span>   
+             <span class="text">Database evaluation & optimization at DynaEngineering AG. Windisch, AG</span>   
         </li>
         <li>
              <span class="date">since 2015</span>  
@@ -145,7 +158,7 @@
         <li>
              <span class="date">2000 - 2006</span> 
              <span class="duration">6 years</span> 
-             <span class="text">elementary school. Zürich ZH</span>      
+             <span class="text">Elementary school. Zürich, ZH</span>      
         </li>
       </ul>
    </div>
@@ -158,8 +171,9 @@
 <div class ="container" id ="projects-container">
 
  <div class="titel">
-    <h2>projects: under construction</h2>
-     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div> 
+    <h2>Projects</h2>
+    <p></p>
+     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>      
     </div>
 
  <div class="projects-list">      
@@ -210,27 +224,54 @@
             After evaluating the requirements our team decided to use WordPress, as it was well documented and widely used. In the first semester of this project, my role was the one of the requirement-engineer. I had to make sure that all requirements were well documented and that there were no misconceptions between the development team (us) and the customer, as they usually generate a lot of useless information and can cost a lot of time. The second semester was more flexible in terms of roles; altough I was assigned the role of information-manager, we often switched tasks or reassigned them as it made sense. </span>
              <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
              <span class="sources">
-            <a target="_blank" href="http://www.svin.ch/cms/nc/de/home.html" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (official - not by us)</a>
+            <a target="_blank" href="http://www.svin.ch/cms/nc/de/home.html" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> SVIN (official - not by us)</a>
               </br>
-             <a target="_blank" href="https://svin25.ch/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>SVIN (our page)</a>
+             <a target="_blank" href="https://svin25.ch/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> SVIN (our page)</a>
            </span>         
         </li> 
 
          <li>
-            <span class="title_1">Audio-Visualisation</span>  
+            <span class="title_1">Mini - MiningRig</span>  
+             <span class="title_2">Learning & implementing one block at the time</span>   
+             <span class="text">After investing some time into Cryptocurrencies and getting hooked, I decided that I wanted to try this out myself. After getting registered on an exchange and buying my first fractions of a Bitcoin, I was lucky to see the market skyrocket to the 2017's all-time high. Seeking for a less volatile, more stable source of income, mining seemed to be the perfect solution. I invested some of my winnings in an over-the-top GPU which I added to my current setup. In order to be able to mine 24/7, but also to use my new graphical processing power for fun, e.g. gaming, I decided to make the whole setup mobile and built it into a service-tray. A current problem I have at the moment is that the setup powers down after some mining sessions, stating ErrorCode 42, KernelPower. I suspect the GTX970 GPU to be the source of the problem, altough I can't explain it right now. Currently I'm using nicehash to let itself decide whichever algorithm is the most efficient, but I plan to alter that in the near future. Also, a future project could be to set-up a monitoring website for the rig, altough there are already a lot of valuable solutions existing.</span> 
+             <span class="sources"></span>
+               <div class="images">  
+                    <a target="_blank" href="https://imgur.com/l8o4eXx"><img src="https://i.imgur.com/l8o4eXx.jpg" title="source: imgur.com" width="100%" /></a>
+                    <a target="_blank" href="https://imgur.com/Ux2OxOq"><img src="https://i.imgur.com/Ux2OxOq.jpg" title="source: imgur.com" width="100%" /></a>             
+             </div>
+        </li>          
+
+         <li>
+            <span class="title_1">Audio-Visualisation with Processing</span>  
              <span class="title_2">Module "Media Computing"</span>   
              <span class="text">A fun, voluntary project I made while learning for the module "Media Computing". We extracted the magnitude and frequency of the incoming signal (microphone or an existing song) using fft (fast-fourier transformation). I splitted the frequencies into three bands: low, mid & high. Frequencies are usually distributed in a logarithmic manner, which is why I only considered the lowest 5% of the frequencies to be low frequencies. After playing around with simply drawing the magnitude of the signal at the right frequency, I started experimenting with some methods the processing library offered, such as pushMatrix- & popMatrix. This enabled me to rotate the drawing according to the amplitude of the corresponding frequency (louder music results in faster rotation). Each drawn line, sometimes perceived as dots or smirks (because the song is very fast, for example), actually represents one certain frequency. Because I wanted to represent this fact even more, I implemented a text-feature which only displays the frequency of a signal if it goes over a hardcoded treshold. A really simple beat-detection algorithm, if you will. With this in mind, I tried to find the right values for the tresholds to correctly display the names of the kickdrum, hihats and snares as they were playing. This didn't work out well enough, as in today's music-production, every song is heavily compressed and signals can get obscurred by others, which is why I resorted in displaying the plain old frequency in hz.</span>
              <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
              <span class="sources">
-              <a target="_blank" href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>Download Processing</a>              
-              <a target="_blank" href="http://code.compartmental.net/tools/minim/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i>Minim (Processing Sound Library)</a>
-              <div class="menu__link"><a href="documents\analyze_sound.txt" download><i class="fa fa-download" aria-hidden="true"></i>download source code</a></div>
+              <a target="_blank" href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Download Processing</a>              
+              <a target="_blank" href="http://code.compartmental.net/tools/minim/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Minim (Processing Sound Library, needed)</a>
+              <div class="menu__link"><a href="documents\analyze_sound.txt" download><i class="fa fa-download" aria-hidden="true"></i> Download source code</a></div>
               </br></span>
                <div class="images">  
            <a target="_blank" href="https://imgur.com/JNcG387"><img src="https://i.imgur.com/JNcG387.png" title="source: imgur.com" width="100%"/></a>
            <a target="_blank" href="https://imgur.com/CSK7zkc"><img src="https://i.imgur.com/CSK7zkc.png" title="source: imgur.com" width="100%"/></a>             
              </div>
-        </li>       
+        </li>  
+
+        <li>
+            <span class="title_1">A game with Processing</span>  
+             <span class="title_2">First workshop!</span>   
+             <span class="text">My first real coding-project. Processing is a small IDE which offers a really simple-to-use Java-Setup in order to enable fun learning projects. This little game was created in 2016 during my first coding-workshop at the FHNW. After reaching some level of functionality I decided to make use of the simple idea and add some minimalistic styling, such as the background and various sounds.</span> 
+             <span class="sources">
+              <a target="_blank" href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Download Processing</a>    
+              <div class="menu__link"><a href="documents\SNAKE_v13_Final_Game.zip" download><i class="fa fa-download" aria-hidden="true"></i> Download Project</a></div>
+              </br></span>
+               <div class="images">  
+           <a target="_blank" href="https://imgur.com/VRc1cu2"><img src="https://i.imgur.com/VRc1cu2.jpg" title="source: imgur.com" width="100%" /></a>
+           <a target="_blank" href="https://imgur.com/kxH37lg"><img src="https://i.imgur.com/kxH37lg.jpg" title="source: imgur.com" width="100%" /></a>             
+             </div>
+        </li>      
+
+       
       </ul>
    </div>
 
@@ -243,8 +284,40 @@
 <div class ="container" id ="contact-container">
 
  <div class="titel">
-    <h2>contact: </h2>
-    <p> this page is currently under construction. please come again later!
+    <h2>Contact </h2> 
+</div>
+
+<div class="content-list">
+  <ul>
+    <li>
+            <span class="date">Know-How</span>  
+            <span class="duration"></span>   
+            <span class="text">Spicy jalapeno bacon ipsum dolor amet nostrud non occaecat burgdoggen chicken bacon laboris andouille tenderloin jowl sunt id turkey nulla sed. Kielbasa burgdoggen andouille sausage pork belly. </span> 
+    </li>
+     <li>
+     <span class="date">Spinnennetz?</span>  
+            <span class="duration"></span>   
+            <span class="text">Ut do t-bone excepteur. Tenderloin biltong meatloaf irure cillum. Mollit occaecat bresaola culpa. Cupim strip steak elit commodo corned beef qui anim irure. Kielbasa frankfurter in tongue, alcatra voluptate ham hock cupidatat pig eu. Cupidatat esse culpa ad.</span> 
+          </li>
+      <li>
+      <span class="date">Soziale Netzwerke</span>  
+            <span class="duration"></span>   
+            <span class="text">Ball tip chicken quis sint jerky proident ipsum pastrami, frankfurter strip steak exercitation dolore cow nulla. Voluptate shank sunt cillum esse sirloin fugiat fatback buffalo commodo. Aliquip turducken sunt tail adipisicing. Bacon swine pork bresaola. Ut adipisicing bacon short ribs, tongue non incididunt salami ipsum leberkas.Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. </span> 
+          </li>
+       <li>
+       <span class="date">Contact</span>  
+            <span class="duration"></span>   
+            <span class="text">Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. Drumstick laboris dolore doner elit kevin in hamburger non flank beef minim cupidatat duis dolore. Ut hamburger adipisicing sed cupidatat officia.</span>
+             </li>
+        <li>
+             <span class="date">Sound</span>  
+            <span class="duration"></span>   
+            <span class="text">Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. Drumstick laboris dolore doner elit kevin in hamburger non flank beef minim cupidatat duis dolore. Ut hamburger adipisicing sed cupidatat officia.</span>
+        </li>
+
+
+  </ul>
+
 </div>
 
 <div w3-include-html="footer.html"></div>
@@ -350,9 +423,10 @@
 
   window.onload = function() { 
     //only display the landingpage-container when entering the site
+
     triggerLoader(); 
     document.getElementById('headerID').style.display = 'none';   
-    hideAllDivs();
+    
 
     //adding event-listeners to the menu-buttons
     document.getElementById('welcome-link').addEventListener('click', function (){  
@@ -371,32 +445,27 @@
 
      document.getElementById('projects-link').addEventListener('click', function (){  
       hideAllDivs(); 
-      document.title = "my projects";
+      document.title = "Projects";
       document.getElementById('projects-container').style.display = 'block';      
      
     }, false);
 
      document.getElementById('contact-link').addEventListener('click', function (){  
       hideAllDivs();  
-      document.title = "contact";
+      document.title = "Contact";
       document.getElementById('contact-container').style.display = 'block';      
      
     }, false);
 
-     document.getElementById('logo-link').addEventListener('click', function (){    
-       hideAllDivs();
-       document.title = "about";
-      document.getElementById('about-container').style.display = 'block';      
-      
-    }, false);
 
-
-     function triggerLoader() {
-    var myVar = setTimeout(showPage, 2000);
+    function triggerLoader() {
+    hideAllDivs();
+    showPage();
+    var myVar = setTimeout(showPage,0);
     }
 
     function showPage() {
-    document.getElementById("loader").style.display = "none";
+    //document.getElementById("loader").style.display = "none";
     document.getElementById("landingpage-container").style.display = "block";
     document.getElementById('headerID').style.display = 'block';
     w3.includeHTML();
@@ -408,9 +477,11 @@
     document.getElementById('projects-container').style.display = 'none';
     document.getElementById('contact-container').style.display = 'none';
     }
+    
 
 };
 </script>
+
 
 
 

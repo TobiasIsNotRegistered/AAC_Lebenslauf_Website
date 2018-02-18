@@ -38,6 +38,18 @@ body{
   	margin-bottom: 5vh; 
 }
 
+/* **************** LOADER ************** */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
 
 
 /* **************** ALL CONTENT_CONTAINERS ************** */
@@ -132,21 +144,19 @@ body{
 }
 
 
-/* ******************* CURRICULUM VITAE ******************* */
+/* ******************* CONTENT ******************* */
 
-#cv-container{
-
-	
+#content-container{	
 }
 
-.cv-list {
+.content-list {
 	padding: calc(4vw + 0vh);
 	padding-top: 2vh;
 	padding-bottom: 2vh;
 
 }
 
-.cv-list ul{
+.content-list ul{
 	list-style-type: none; 
 	 display: flex;
 	 flex-wrap: wrap;
@@ -155,7 +165,7 @@ body{
 	 justify-content: space-between;
 	}
 
-.cv-list ul li{
+.content-list ul li{
 	
 	flex-grow: 1; /* default 0 */
 	flex-basis: calc(15vw + 15vh);
@@ -171,21 +181,21 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
 
-#cv-container .date {
+.date {
 	font-size: calc(15px + 2vh);	
 	margin-right: 5px;
 	
 }
 
-#cv-container .duration {
+.duration {
 	font-size: calc(10px + 1vh);
 	font-style: italic;
 	white-space: nowrap;
 }
 
-#cv-container .text {
+.text {
 	font-size: calc(10px + .5vh);
-	text-align: justify;
+	text-align: left;
 /* used to force linebreak */
 	display: block;
 }
@@ -213,11 +223,16 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+
+
 }
 
 .projects-list ul li img{
 		
-	max-width: 400px;
+	max-width: 250px;
+	max-height: 250px;
+	width: auto;
+	height: auto;
 }
 
 .projects-inside-list ul{
@@ -239,7 +254,6 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	background:  linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)), url('../images/patterns/ignasi_pattern_s.png');
   	background-repeat: repeat;
   	border-radius: 10px;
-
 
   	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
@@ -283,7 +297,7 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 
 #projects-container .text {
 	font-size: calc(10px + .5vh);
-	text-align: justify;
+	text-align: left;
 /* used to force linebreak */
 	display: block;
 }
@@ -309,6 +323,19 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 
 #projects-container .images {
 	padding-top: 15px;
+}
+
+/* ****************** Contact ***************************** */
+
+.content {
+    padding: calc(5px + 1vh + 1vw);
+	margin: calc(1vw + 1vh);
+
+	background: white;
+
+	-webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
+	 box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 }
 
 /* ****************** ABOUT ***************************** */
