@@ -35,11 +35,10 @@ body{
 
   	/* for sticky footer */
   	margin-bottom: 10vh; 
+  	min-height: 100vh;
 }
 
-a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
-       cursor: pointer;
-}
+
 
 /* **************** LOADER ************** */
 .no-js #loader { display: none;  }
