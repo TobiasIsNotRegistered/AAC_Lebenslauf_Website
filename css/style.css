@@ -34,7 +34,7 @@ body{
   	line-height: 1.5;
 
   	/* for sticky footer */
-  	margin-bottom: 5vh; 
+  	margin-bottom: 10vh; 
 }
 
 /* **************** LOADER ************** */
@@ -196,6 +196,19 @@ box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.35);
 	font-size: calc(10px + .5vh);
 	text-align: left;
 /* used to force linebreak */
+	display: block;
+}
+
+.text ul li {
+	padding: 5px;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 5px;	
+}
+
+.text ul li a{
+	text-align: center;
 	display: block;
 }
 

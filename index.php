@@ -58,7 +58,7 @@
       <li class="menu__item" id="welcome-link" > <a href="#" class="menu__link"><i class="fa fa-facebook-square">  </i> Welcome</a></li>
       <li class="menu__item" id="cv-link">       <a href="#" class="menu__link"><i class="fa fa-info-circle">      </i> Curriculum Vitae</a></li>
       <li class="menu__item" id="projects-link"> <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Projects</a></li>   
-      <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> Contact</a></li>
+      <li class="menu__item" id="contact-link">  <a href="#" class="menu__link"><i class="fa fa-product-hunt">     </i> About / Contact</a></li>
      
     </ul>
   </nav>  
@@ -138,17 +138,22 @@
         <li>
              <span class="date">2013 - 2014 </span>
              <span class="duration">8 months</span> 
-             <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>        
+             <span class="text">Alternative service (in lieu of military service) at Stage-on-air, supervising employees and coordinating workloads. Aarau, AG</span>
+             <span class="sources"><div class="menu__link"><a href="Zeugnisse\Arbeitszeugnis stage-on-air.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference (german)</a></div></span>        
         </li>
         <li>
              <span class="date">2010 - 2013 </span>
              <span class="duration">3 years</span> 
              <span class="text">Technical vocational baccalaurate diploma, Berufsschule Lenzburg. Lenzburg, AG</span>      
+             <span class="sources"><div class="menu__link"><a href="Zeugnisse\BMS_Zeugnis.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download certificate</a></div>  </br>
+             <div class="menu__link"><a href="Zeugnisse\First Certificate.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download first-certificate</a></div></span>
         </li>
         <li>
              <span class="date">2009 - 2013 </span>
              <span class="duration">4 years</span>
              <span class="text">Apprenticeship civil engineering, Porta AG. Brugg, AG / Interlaken, BE</span>       
+             <span class="sources"><div class="menu__link"><a href="Zeugnisse\AZ_porta_merged.pdf" download><i class="fa fa-download" aria-hidden="true"></i> download employer's reference (german)</a></div>
+              <div class="menu__link"><a href="Zeugnisse\Fähigkeitsausweis.jpg" download><i class="fa fa-download" aria-hidden="true"></i> download certificate</a></div></span>   
         </li>
         <li>
              <span class="date">2006 - 2009</span>
@@ -173,7 +178,8 @@
  <div class="titel">
     <h2>Projects</h2>
     <p></p>
-     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>      
+     <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div> |
+     <div class="menu__link"><a target="_blank" href="https://github.com/TobiasIsNotRegistered"><i class="fa fa-github" aria-hidden="true"></i> My GitHub</a></div>   
     </div>
 
  <div class="projects-list">      
@@ -183,7 +189,7 @@
              <span class="title_1">This website</span>  
              <span class="title_2">CV hosted on a Raspberry Pi</span>   
              <span class="text">I always wanted to make my own website since I started studying IT. The raspberry was the perfect solution to host it on my own space and to learn everything related to it. The case was 3D-printed at FHNW-Windisch, the blueprints are from thingyverse.com. After setting up the Pi and getting some inspiration from codepen.io, I was eager to present my family & friends what I've worked for the past few days. That's why I decided to use the noIP - service to redirect some arbitrary, free adress (tobiassigel.redirectme.net) to our LAN. The raspberry actually informs noIP every 10 minutes about our WAN-adress, so I don't have to do this manually. Luckily I was also able to set my Raspberry's local IP through the router, which ensures that Port-Forwarding works. One challenge of this project was to constantly remind myself that I was using SASS (Syntactically Awesome Style Sheets) and had to activate it in order to see changes. A goal of mine was to keep everything super responsive; for mobiles, tablets as well as desktop's, but the different browsers supporting different technologies made this a bigger challenge than I've imagined it to be.</span>
-             <span class="keywords">Keywords: Raspbian / Linux, PortForwarding / staticIP's, Html5, CSS3, JS, PHP, Sass, Responsive Web-Design</span> 
+             <span class="keywords">Keywords: Raspbian / Linux, PortForwarding / staticIP's, Html5, CSS3, JS, PHP, Sass, (Responsive-) Web-Design</span> 
              <span class="sources">
               <div class="menu__link"><a target="_blank" href="https://github.com/TobiasIsNotRegistered/tobiasisnotregistered.github.io/tree/loaderScreenAndMore"><i class="fa fa-github" aria-hidden="true"></i> GitHub-Link</a></div>
              </span> 
@@ -222,7 +228,7 @@
               </ul>
             </div class="projects-inside-list">
             After evaluating the requirements our team decided to use WordPress, as it was well documented and widely used. In the first semester of this project, my role was the one of the requirement-engineer. I had to make sure that all requirements were well documented and that there were no misconceptions between the development team (us) and the customer, as they usually generate a lot of useless information and can cost a lot of time. The second semester was more flexible in terms of roles; altough I was assigned the role of information-manager, we often switched tasks or reassigned them as it made sense. </span>
-             <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
+             <span class="keywords">Keywords: WordPress, BuddyPress, Requirements-Engineering, Selenium - Testing, D3 (JS-library), PHP, Responsive Webdesign</span> 
              <span class="sources">
             <a target="_blank" href="http://www.svin.ch/cms/nc/de/home.html" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> SVIN (official - not by us)</a>
               </br>
@@ -232,8 +238,9 @@
 
          <li>
             <span class="title_1">Mini - MiningRig</span>  
-             <span class="title_2">Learning & implementing one block at the time</span>   
+             <span class="title_2">the hype of blockchain</span>   
              <span class="text">After investing some time into Cryptocurrencies and getting hooked, I decided that I wanted to try this out myself. After getting registered on an exchange and buying my first fractions of a Bitcoin, I was lucky to see the market skyrocket to the 2017's all-time high. Seeking for a less volatile, more stable source of income, mining seemed to be the perfect solution. I invested some of my winnings in an over-the-top GPU which I added to my current setup. In order to be able to mine 24/7, but also to use my new graphical processing power for fun, e.g. gaming, I decided to make the whole setup mobile and built it into a service-tray. A current problem I have at the moment is that the setup powers down after some mining sessions, stating ErrorCode 42, KernelPower. I suspect the GTX970 GPU to be the source of the problem, altough I can't explain it right now. Currently I'm using nicehash to let itself decide whichever algorithm is the most efficient, but I plan to alter that in the near future. Also, a future project could be to set-up a monitoring website for the rig, altough there are already a lot of valuable solutions existing.</span> 
+             <span class="keywords">Keywords: Mining, Blockchain, Cryptocurrencies, Hardware-monitoring</span> 
              <span class="sources"></span>
                <div class="images">  
                     <a target="_blank" href="https://imgur.com/l8o4eXx"><img src="https://i.imgur.com/l8o4eXx.jpg" title="source: imgur.com" width="100%" /></a>
@@ -245,7 +252,7 @@
             <span class="title_1">Audio-Visualisation with Processing</span>  
              <span class="title_2">Module "Media Computing"</span>   
              <span class="text">A fun, voluntary project I made while learning for the module "Media Computing". We extracted the magnitude and frequency of the incoming signal (microphone or an existing song) using fft (fast-fourier transformation). I splitted the frequencies into three bands: low, mid & high. Frequencies are usually distributed in a logarithmic manner, which is why I only considered the lowest 5% of the frequencies to be low frequencies. After playing around with simply drawing the magnitude of the signal at the right frequency, I started experimenting with some methods the processing library offered, such as pushMatrix- & popMatrix. This enabled me to rotate the drawing according to the amplitude of the corresponding frequency (louder music results in faster rotation). Each drawn line, sometimes perceived as dots or smirks (because the song is very fast, for example), actually represents one certain frequency. Because I wanted to represent this fact even more, I implemented a text-feature which only displays the frequency of a signal if it goes over a hardcoded treshold. A really simple beat-detection algorithm, if you will. With this in mind, I tried to find the right values for the tresholds to correctly display the names of the kickdrum, hihats and snares as they were playing. This didn't work out well enough, as in today's music-production, every song is heavily compressed and signals can get obscurred by others, which is why I resorted in displaying the plain old frequency in hz.</span>
-             <span class="keywords">Keywords: WordPresse, BuddyPress, Requirements-Engineering </span> 
+             <span class="keywords">Keywords: Processing, Java, Visualisation</span> 
              <span class="sources">
               <a target="_blank" href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Download Processing</a>              
               <a target="_blank" href="http://code.compartmental.net/tools/minim/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Minim (Processing Sound Library, needed)</a>
@@ -261,6 +268,7 @@
             <span class="title_1">A game with Processing</span>  
              <span class="title_2">First workshop!</span>   
              <span class="text">My first real coding-project. Processing is a small IDE which offers a really simple-to-use Java-Setup in order to enable fun learning projects. This little game was created in 2016 during my first coding-workshop at the FHNW. After reaching some level of functionality I decided to make use of the simple idea and add some minimalistic styling, such as the background and various sounds.</span> 
+             <span class="keywords">Keywords: Processing, Java, Game-Design</span> 
              <span class="sources">
               <a target="_blank" href="https://processing.org/" class = "menu__link"><i class="fa fa-external-link" aria-hidden="true"></i> Download Processing</a>    
               <div class="menu__link"><a href="documents\SNAKE_v13_Final_Game.zip" download><i class="fa fa-download" aria-hidden="true"></i> Download Project</a></div>
@@ -285,37 +293,39 @@
 
  <div class="titel">
     <h2>Contact </h2> 
+    <div class="menu__link"><a href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> mail me!</a></div>  
 </div>
 
 <div class="content-list">
   <ul>
     <li>
-            <span class="date">Know-How</span>  
-            <span class="duration"></span>   
-            <span class="text">Spicy jalapeno bacon ipsum dolor amet nostrud non occaecat burgdoggen chicken bacon laboris andouille tenderloin jowl sunt id turkey nulla sed. Kielbasa burgdoggen andouille sausage pork belly. </span> 
+            <span class="date">About</span>  
+            <span class="duration">Tobias Sigel</span>   
+            <span class="text">I'm an IT-student @FHNW-Windisch, studying the course "iCompetence". My skillset and personal interests revolves around management, design and usability. In my freetime you'll find me producing music, exercising, hanging out with friends, gaming, or working on a project like this.</span> 
     </li>
      <li>
-     <span class="date">Spinnennetz?</span>  
-            <span class="duration"></span>   
-            <span class="text">Ut do t-bone excepteur. Tenderloin biltong meatloaf irure cillum. Mollit occaecat bresaola culpa. Cupim strip steak elit commodo corned beef qui anim irure. Kielbasa frankfurter in tongue, alcatra voluptate ham hock cupidatat pig eu. Cupidatat esse culpa ad.</span> 
+     <span class="date">Music</span>  
+            <span class="duration">leave a like!</span>   
+            <span class="text"><iframe width="100%" height="auto" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/398975976&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe></span> 
           </li>
       <li>
-      <span class="date">Soziale Netzwerke</span>  
+      <span class="date">Contact & social networks</span>  
             <span class="duration"></span>   
-            <span class="text">Ball tip chicken quis sint jerky proident ipsum pastrami, frankfurter strip steak exercitation dolore cow nulla. Voluptate shank sunt cillum esse sirloin fugiat fatback buffalo commodo. Aliquip turducken sunt tail adipisicing. Bacon swine pork bresaola. Ut adipisicing bacon short ribs, tongue non incididunt salami ipsum leberkas.Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. </span> 
-          </li>
-       <li>
-       <span class="date">Contact</span>  
-            <span class="duration"></span>   
-            <span class="text">Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. Drumstick laboris dolore doner elit kevin in hamburger non flank beef minim cupidatat duis dolore. Ut hamburger adipisicing sed cupidatat officia.</span>
-             </li>
-        <li>
-             <span class="date">Sound</span>  
-            <span class="duration"></span>   
-            <span class="text">Lorem fugiat sint brisket strip steak incididunt cow pork hamburger bacon. Tail turducken pariatur, sint veniam nostrud dolore et ut porchetta. Landjaeger lorem shank, aute fugiat in rump pork. Shoulder labore fugiat pork belly irure sirloin porchetta, reprehenderit sed cillum. Aliqua ad nisi magna biltong kielbasa excepteur jowl. Drumstick laboris dolore doner elit kevin in hamburger non flank beef minim cupidatat duis dolore. Ut hamburger adipisicing sed cupidatat officia.</span>
-        </li>
-
-
+            <span class="text">
+              <ul>
+                <li>
+                  <a class = "menu__link target="_blank" href="https://www.facebook.com/TobiasSigel" width="auto"><i class="fa fa-facebook"></i>acebook</a></li>
+                  <li>
+                  <a class = "menu__link target="_blank" href="https://soundcloud.com/stream"><i class="fa fa-soundcloud"></i> Soundcloud</a></li>
+                  <li>
+                  <a class = "menu__link target="_blank" href="https://www.xing.com/profile/Tobias_Sigel2/cv"><i class="fa fa-xing"></i> Xing</a></li>
+                  <li>
+                  <a class="menu__link" href="mailto:tobias.sigel@students.fhnw.ch"><i class="fa fa-envelope" aria-hidden="true"></i> Mail me!</a> 
+                  <li>
+                    <a class="menu__link"><i class="fa fa-phone"></i> 076 437 85 15</a></li> 
+              </ul>
+             </span> 
+        </li>  
   </ul>
 
 </div>
