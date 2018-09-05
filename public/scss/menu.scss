@@ -122,8 +122,10 @@ $primary-color: #333;
   &__list {
     margin: 0;
     padding: 0;
-    background: url('../images/patterns/ignasi_pattern_s.png');
+    background-repeat: no-repeat;
+    background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/patterns/polygons.jpg');
     background-attachment: fixed;
+    background-size: 100vw 100vh;
     
     -webkit-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px -6px 15px 0px rgba(0,0,0,0.2);
@@ -142,8 +144,10 @@ $primary-color: #333;
   }
   
   &__brand {
-     background: url('../images/patterns/ignasi_pattern_s.png');
+   background-repeat: no-repeat;
+     background:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('../images/patterns/polygons.jpg');
      background-attachment: fixed;
+     background-size: 100vw 100vh;
      
 
     @include easeOut;
@@ -157,7 +161,7 @@ $primary-color: #333;
   }
   
   &__item {
-    padding: 10px 0;
+    padding: 25px 0;
 
     //commented this out because of usability. If you want to make the list-items animated again, use something like: transform: translate3d(0, 100vh, 0);
     //transform: translate3d(0, 0, 0);
@@ -166,7 +170,6 @@ $primary-color: #333;
     
     &--active {
      //transform: translate3d(0, 0, 0);
-
 
     }
   }
@@ -190,7 +193,6 @@ $primary-color: #333;
       left: 50%;
       width: 0px;
       height: 2px;
-      background: white;
       transform: translateX(-50%);
       @include easeOut;
     }
